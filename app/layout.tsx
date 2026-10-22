@@ -17,7 +17,6 @@ export const metadata: Metadata = {
     description: T.en.meta_description,
     url: SITE_URL,
     siteName: "César Salgado",
-    images: ["/profile.jpg"],
     type: "website",
   },
 };

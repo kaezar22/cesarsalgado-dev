@@ -24,6 +24,7 @@ export const T = {
       "I build AI tools, data pipelines and RPA automations that turn manual processes into automated ones and data into decisions.",
     nav_services: "Services",
     nav_projects: "Projects",
+    nav_demos: "Live demos",
     nav_chat: "Ask my AI",
     nav_contact: "Contact",
     other_lang: "Español",
@@ -80,6 +81,12 @@ export const T = {
     projects_title: "Projects you can open and try",
     projects_note:
       "Some live demos run on a free tier, so a demo may take up to a minute to wake up.",
+    demos_kicker: "Live demos",
+    demos_title: "Try the systems, not just the screenshots",
+    demos_lead:
+      "Working versions of automations I built for real companies, running on a fictional dairy company (Lácteos Agua Clara) with invented data. Click around: nothing you do affects anyone else.",
+    demos_open: "Open the demo",
+    demos_soon: "Coming next: client account portal, plant production log and an AI invoice reader.",
     problem: "The problem",
     solution: "What it does",
     open: "Open project",
@@ -114,6 +121,7 @@ export const T = {
       "Construyo herramientas de IA, pipelines de datos y automatizaciones RPA que convierten procesos manuales en automáticos y datos en decisiones.",
     nav_services: "Servicios",
     nav_projects: "Proyectos",
+    nav_demos: "Demos",
     nav_chat: "Pregúntale a mi IA",
     nav_contact: "Contacto",
     other_lang: "English",
@@ -170,6 +178,12 @@ export const T = {
     projects_title: "Proyectos que puede abrir y probar",
     projects_note:
       "Algunas demos están en un plan gratuito, así que pueden tardar hasta un minuto en despertar.",
+    demos_kicker: "Demos en vivo",
+    demos_title: "Pruebe los sistemas, no solo las capturas",
+    demos_lead:
+      "Versiones funcionales de automatizaciones que construí para empresas reales, montadas sobre una empresa láctea ficticia (Lácteos Agua Clara) con datos inventados. Explore con libertad: nada de lo que haga afecta a nadie más.",
+    demos_open: "Abrir la demo",
+    demos_soon: "Próximamente: portal de estado de cuenta, registro de producción en planta y lector de facturas con IA.",
     problem: "El problema",
     solution: "Qué hace",
     open: "Abrir proyecto",

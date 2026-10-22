@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Chat from "./Chat";
+import { DEMOS } from "@/lib/demo/pages";
 import {
   CV_FILES,
   EMAIL,
@@ -84,6 +85,7 @@ export default function Site({ lang }: { lang: Lang }) {
         <nav className="cs-nav">
           <a href="#services">{t.nav_services}</a>
           <a href="#projects">{t.nav_projects}</a>
+          <a href="#demos">{t.nav_demos}</a>
           <a href="#chat">{t.nav_chat}</a>
           <a href="#contact">{t.nav_contact}</a>
           <Link href={other === "en" ? "/" : "/es"} className="cs-lang" hrefLang={other}>
@@ -173,6 +175,33 @@ export default function Site({ lang }: { lang: Lang }) {
               <ProjectCard key={p.image} project={p} lang={lang} />
             ))}
           </div>
+        </section>
+
+        <section className="cs-section" id="demos">
+          <div className="cs-kicker">{t.demos_kicker}</div>
+          <h2>{t.demos_title}</h2>
+          <p className="cs-note">{t.demos_lead}</p>
+          <div className="dm-cards">
+            {Object.values(DEMOS).map((d) => (
+              <Link key={d.slug} className="dm-card" href={`${lang === "es" ? "/es" : ""}/demos/${d.slug}`}>
+                <div className="dm-card-art" aria-hidden>
+                  <span className="a1">“forno chico”</span>
+                  <span className="a2">→ Forno Vivo Chicó · 91%</span>
+                  <span className="a3">FE-D7001.pdf ✓</span>
+                </div>
+                <div className="dm-card-body">
+                  <div className="cs-tag">{d[lang].tag}</div>
+                  <h3>{d[lang].title}</h3>
+                  <p>{d[lang].card}</p>
+                  <div className="cs-cta">
+                    {t.demos_open}
+                    <i>→</i>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <p className="cs-note dm-soon">{t.demos_soon}</p>
         </section>
 
         <section className="cs-section" id="chat">

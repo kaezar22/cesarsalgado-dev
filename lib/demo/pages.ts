@@ -110,6 +110,42 @@ export const DEMOS = {
       },
     },
   },
+  invoices: {
+    slug: "invoices",
+    art: ["factura_proveedor.pdf", "→ AI: 14 fields · 4 lines", "⚠ Duplicate · already in payables"],
+    en: {
+      tag: "AI · Document processing",
+      title: "AI invoice reader",
+      card: "Drop a supplier invoice in any format. A language model extracts supplier, dates, lines, taxes and totals, and deterministic checks catch what the AI can’t be trusted with: wrong sums, invalid NITs and duplicates.",
+      lead:
+        "Accounts payable teams retype supplier invoices that all look different. Here a language model reads the PDF and returns structured data, and then plain code checks it: do the lines add up, is the NIT check digit valid, is the supplier in the master data, was this invoice already registered? Try the three samples (two of them hide a problem) or upload your own.",
+      how: {
+        title: "How it works in production",
+        items: [
+          "It started as a template parser for a food distributor’s supplier invoices; a language model replaces one template per supplier with a single reader for any layout.",
+          "The model only extracts. Every number is re-checked with arithmetic, and suppliers and invoice numbers are matched against the accounting system before anything is posted.",
+          "Invoices that pass every check go straight to accounts payable; the rest land in a review queue with the reason highlighted.",
+          "Scanned invoices add an OCR step before the model. Nothing in this demo is stored: the file is read once and discarded.",
+        ],
+      },
+    },
+    es: {
+      tag: "IA · Procesamiento de documentos",
+      title: "Lector de facturas con IA",
+      card: "Suba una factura de proveedor en cualquier formato. Un modelo de lenguaje extrae proveedor, fechas, ítems, impuestos y totales, y validaciones automáticas atrapan lo que no se le puede confiar a la IA: sumas erradas, NIT inválidos y duplicados.",
+      lead:
+        "Los equipos de cuentas por pagar digitan a mano facturas de proveedores que vienen cada una en un formato distinto. Aquí un modelo de lenguaje lee el PDF y devuelve datos estructurados, y luego código simple los verifica: ¿cuadran las líneas?, ¿el dígito de verificación del NIT es válido?, ¿el proveedor existe en los datos maestros?, ¿esta factura ya estaba registrada? Pruebe las tres de ejemplo (dos esconden un problema) o suba la suya.",
+      how: {
+        title: "Cómo funciona en producción",
+        items: [
+          "Empezó como un lector por plantillas para las facturas de proveedores de una distribuidora de alimentos; el modelo de lenguaje reemplaza una plantilla por proveedor con un solo lector para cualquier formato.",
+          "El modelo solo extrae. Cada número se vuelve a verificar con aritmética, y el proveedor y el número de factura se cruzan con el sistema contable antes de registrar nada.",
+          "Las facturas que pasan todas las validaciones van directo a cuentas por pagar; las demás quedan en una cola de revisión con el motivo resaltado.",
+          "Para facturas escaneadas se agrega un paso de OCR antes del modelo. En esta demo no se guarda nada: el archivo se lee una vez y se descarta.",
+        ],
+      },
+    },
+  },
 } as const;
 
 export type DemoKey = keyof typeof DEMOS;

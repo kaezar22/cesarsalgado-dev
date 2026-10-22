@@ -201,7 +201,7 @@ export default function Site({ lang }: { lang: Lang }) {
               </Link>
             ))}
           </div>
-          <p className="cs-note dm-soon">{t.demos_soon}</p>
+          {t.demos_soon && <p className="cs-note dm-soon">{t.demos_soon}</p>}
         </section>
 
         <section className="cs-section" id="chat">

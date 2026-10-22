@@ -86,7 +86,7 @@ export const T = {
     demos_lead:
       "Working versions of automations I built for real companies, running on a fictional dairy company (Lácteos Agua Clara) with invented data. Click around: nothing you do affects anyone else.",
     demos_open: "Open the demo",
-    demos_soon: "Coming next: an AI invoice reader.",
+    demos_soon: "",
     problem: "The problem",
     solution: "What it does",
     open: "Open project",
@@ -183,7 +183,7 @@ export const T = {
     demos_lead:
       "Versiones funcionales de automatizaciones que construí para empresas reales, montadas sobre una empresa láctea ficticia (Lácteos Agua Clara) con datos inventados. Explore con libertad: nada de lo que haga afecta a nadie más.",
     demos_open: "Abrir la demo",
-    demos_soon: "Próximamente: lector de facturas con IA.",
+    demos_soon: "",
     problem: "El problema",
     solution: "Qué hace",
     open: "Abrir proyecto",

@@ -2041,5 +2041,783 @@
    "balance": -300000,
    "advance": true
   }
+ ],
+ "productionProducts": [
+  {
+   "code": "P-CAM",
+   "en": "Farmer's cheese",
+   "es": "Queso campesino",
+   "input": "milk",
+   "stdLPerKg": 8.5
+  },
+  {
+   "code": "P-DCR",
+   "en": "Double-cream cheese",
+   "es": "Queso doble crema",
+   "input": "milk",
+   "stdLPerKg": 9.6
+  },
+  {
+   "code": "P-MOZ",
+   "en": "Mozzarella",
+   "es": "Mozzarella",
+   "input": "milk",
+   "stdLPerKg": 9.9
+  },
+  {
+   "code": "P-CUA",
+   "en": "Cuajada (fresh curd)",
+   "es": "Cuajada",
+   "input": "milk",
+   "stdLPerKg": 6.4
+  },
+  {
+   "code": "P-GRI",
+   "en": "Greek yogurt",
+   "es": "Yogurt griego",
+   "input": "milk",
+   "stdLPerKg": 3.7
+  },
+  {
+   "code": "P-ARE",
+   "en": "Arequipe (dulce de leche)",
+   "es": "Arequipe",
+   "input": "milk",
+   "stdLPerKg": 2.6
+  },
+  {
+   "code": "P-MAN",
+   "en": "Butter",
+   "es": "Mantequilla",
+   "input": "cream",
+   "stdLPerKg": 2.1
+  }
+ ],
+ "operators": [
+  "Ana Rojas",
+  "Luis Pardo",
+  "Marta Gil"
+ ],
+ "production": [
+  {
+   "dayOffset": -30,
+   "product": "P-MOZ",
+   "operator": "Marta Gil",
+   "inputL": 640,
+   "outputKg": 61.4,
+   "minutes": 195
+  },
+  {
+   "dayOffset": -30,
+   "product": "P-GRI",
+   "operator": "Luis Pardo",
+   "inputL": 610,
+   "outputKg": 155.0,
+   "minutes": 597
+  },
+  {
+   "dayOffset": -29,
+   "product": "P-ARE",
+   "operator": "Marta Gil",
+   "inputL": 440,
+   "outputKg": 175.1,
+   "minutes": 194
+  },
+  {
+   "dayOffset": -29,
+   "product": "P-DCR",
+   "operator": "Marta Gil",
+   "inputL": 500,
+   "outputKg": 52.2,
+   "minutes": 213
+  },
+  {
+   "dayOffset": -28,
+   "product": "P-CUA",
+   "operator": "Luis Pardo",
+   "inputL": 400,
+   "outputKg": 63.1,
+   "minutes": 52
+  },
+  {
+   "dayOffset": -28,
+   "product": "P-ARE",
+   "operator": "Luis Pardo",
+   "inputL": 400,
+   "outputKg": 163.1,
+   "minutes": 210
+  },
+  {
+   "dayOffset": -28,
+   "product": "P-CAM",
+   "operator": "Luis Pardo",
+   "inputL": 590,
+   "outputKg": 71.1,
+   "minutes": 118
+  },
+  {
+   "dayOffset": -28,
+   "product": "P-ARE",
+   "operator": "Ana Rojas",
+   "inputL": 370,
+   "outputKg": 130.7,
+   "minutes": 219
+  },
+  {
+   "dayOffset": -27,
+   "product": "P-GRI",
+   "operator": "Marta Gil",
+   "inputL": 300,
+   "outputKg": 85.9,
+   "minutes": 464
+  },
+  {
+   "dayOffset": -27,
+   "product": "P-ARE",
+   "operator": "Marta Gil",
+   "inputL": 340,
+   "outputKg": 137.0,
+   "minutes": 240
+  },
+  {
+   "dayOffset": -27,
+   "product": "P-MAN",
+   "operator": "Marta Gil",
+   "inputL": 390,
+   "outputKg": 180.1,
+   "minutes": 90
+  },
+  {
+   "dayOffset": -27,
+   "product": "P-CAM",
+   "operator": "Marta Gil",
+   "inputL": 430,
+   "outputKg": 53.8,
+   "minutes": 99
+  },
+  {
+   "dayOffset": -26,
+   "product": "P-CUA",
+   "operator": "Marta Gil",
+   "inputL": 480,
+   "outputKg": 79.5,
+   "minutes": 59
+  },
+  {
+   "dayOffset": -26,
+   "product": "P-DCR",
+   "operator": "Luis Pardo",
+   "inputL": 690,
+   "outputKg": 69.5,
+   "minutes": 165
+  },
+  {
+   "dayOffset": -25,
+   "product": "P-DCR",
+   "operator": "Ana Rojas",
+   "inputL": 920,
+   "outputKg": 95.2,
+   "minutes": 199
+  },
+  {
+   "dayOffset": -25,
+   "product": "P-MOZ",
+   "operator": "Luis Pardo",
+   "inputL": 860,
+   "outputKg": 86.3,
+   "minutes": 156
+  },
+  {
+   "dayOffset": -24,
+   "product": "P-ARE",
+   "operator": "Luis Pardo",
+   "inputL": 390,
+   "outputKg": 148.5,
+   "minutes": 201
+  },
+  {
+   "dayOffset": -24,
+   "product": "P-CAM",
+   "operator": "Ana Rojas",
+   "inputL": 710,
+   "outputKg": 88.4,
+   "minutes": 124
+  },
+  {
+   "dayOffset": -24,
+   "product": "P-MOZ",
+   "operator": "Luis Pardo",
+   "inputL": 1030,
+   "outputKg": 98.7,
+   "minutes": 154
+  },
+  {
+   "dayOffset": -23,
+   "product": "P-ARE",
+   "operator": "Ana Rojas",
+   "inputL": 300,
+   "outputKg": 108.9,
+   "minutes": 229
+  },
+  {
+   "dayOffset": -23,
+   "product": "P-DCR",
+   "operator": "Luis Pardo",
+   "inputL": 800,
+   "outputKg": 80.4,
+   "minutes": 176
+  },
+  {
+   "dayOffset": -23,
+   "product": "P-GRI",
+   "operator": "Marta Gil",
+   "inputL": 520,
+   "outputKg": 130.5,
+   "minutes": 516
+  },
+  {
+   "dayOffset": -23,
+   "product": "P-ARE",
+   "operator": "Luis Pardo",
+   "inputL": 280,
+   "outputKg": 100.7,
+   "minutes": 211
+  },
+  {
+   "dayOffset": -22,
+   "product": "P-GRI",
+   "operator": "Ana Rojas",
+   "inputL": 420,
+   "outputKg": 108.1,
+   "minutes": 496
+  },
+  {
+   "dayOffset": -22,
+   "product": "P-DCR",
+   "operator": "Ana Rojas",
+   "inputL": 920,
+   "outputKg": 92.1,
+   "minutes": 206
+  },
+  {
+   "dayOffset": -21,
+   "product": "P-ARE",
+   "operator": "Luis Pardo",
+   "inputL": 350,
+   "outputKg": 141.9,
+   "minutes": 184
+  },
+  {
+   "dayOffset": -21,
+   "product": "P-MAN",
+   "operator": "Luis Pardo",
+   "inputL": 300,
+   "outputKg": 144.2,
+   "minutes": 86
+  },
+  {
+   "dayOffset": -21,
+   "product": "P-DCR",
+   "operator": "Marta Gil",
+   "inputL": 990,
+   "outputKg": 99.7,
+   "minutes": 215
+  },
+  {
+   "dayOffset": -20,
+   "product": "P-MAN",
+   "operator": "Marta Gil",
+   "inputL": 320,
+   "outputKg": 140.6,
+   "minutes": 82
+  },
+  {
+   "dayOffset": -20,
+   "product": "P-MAN",
+   "operator": "Marta Gil",
+   "inputL": 400,
+   "outputKg": 180.9,
+   "minutes": 74
+  },
+  {
+   "dayOffset": -20,
+   "product": "P-CAM",
+   "operator": "Marta Gil",
+   "inputL": 610,
+   "outputKg": 71.5,
+   "minutes": 103
+  },
+  {
+   "dayOffset": -19,
+   "product": "P-GRI",
+   "operator": "Marta Gil",
+   "inputL": 530,
+   "outputKg": 144.2,
+   "minutes": 427
+  },
+  {
+   "dayOffset": -19,
+   "product": "P-CAM",
+   "operator": "Marta Gil",
+   "inputL": 520,
+   "outputKg": 63.3,
+   "minutes": 105
+  },
+  {
+   "dayOffset": -18,
+   "product": "P-MAN",
+   "operator": "Luis Pardo",
+   "inputL": 190,
+   "outputKg": 89.0,
+   "minutes": 61
+  },
+  {
+   "dayOffset": -18,
+   "product": "P-GRI",
+   "operator": "Ana Rojas",
+   "inputL": 330,
+   "outputKg": 93.4,
+   "minutes": 521
+  },
+  {
+   "dayOffset": -18,
+   "product": "P-CAM",
+   "operator": "Marta Gil",
+   "inputL": 630,
+   "outputKg": 74.7,
+   "minutes": 120
+  },
+  {
+   "dayOffset": -17,
+   "product": "P-CUA",
+   "operator": "Ana Rojas",
+   "inputL": 270,
+   "outputKg": 42.8,
+   "minutes": 53
+  },
+  {
+   "dayOffset": -17,
+   "product": "P-CAM",
+   "operator": "Luis Pardo",
+   "inputL": 780,
+   "outputKg": 88.3,
+   "minutes": 120
+  },
+  {
+   "dayOffset": -16,
+   "product": "P-CAM",
+   "operator": "Ana Rojas",
+   "inputL": 720,
+   "outputKg": 79.6,
+   "minutes": 115
+  },
+  {
+   "dayOffset": -16,
+   "product": "P-MAN",
+   "operator": "Ana Rojas",
+   "inputL": 270,
+   "outputKg": 124.9,
+   "minutes": 65
+  },
+  {
+   "dayOffset": -16,
+   "product": "P-MOZ",
+   "operator": "Ana Rojas",
+   "inputL": 740,
+   "outputKg": 74.3,
+   "minutes": 198
+  },
+  {
+   "dayOffset": -15,
+   "product": "P-MAN",
+   "operator": "Ana Rojas",
+   "inputL": 400,
+   "outputKg": 180.9,
+   "minutes": 65
+  },
+  {
+   "dayOffset": -15,
+   "product": "P-CAM",
+   "operator": "Ana Rojas",
+   "inputL": 740,
+   "outputKg": 86.8,
+   "minutes": 108
+  },
+  {
+   "dayOffset": -15,
+   "product": "P-CUA",
+   "operator": "Marta Gil",
+   "inputL": 220,
+   "outputKg": 34.0,
+   "minutes": 53
+  },
+  {
+   "dayOffset": -15,
+   "product": "P-CAM",
+   "operator": "Ana Rojas",
+   "inputL": 600,
+   "outputKg": 70.3,
+   "minutes": 96
+  },
+  {
+   "dayOffset": -14,
+   "product": "P-GRI",
+   "operator": "Luis Pardo",
+   "inputL": 510,
+   "outputKg": 137.3,
+   "minutes": 463
+  },
+  {
+   "dayOffset": -14,
+   "product": "P-CAM",
+   "operator": "Luis Pardo",
+   "inputL": 830,
+   "outputKg": 94.8,
+   "minutes": 96
+  },
+  {
+   "dayOffset": -14,
+   "product": "P-MAN",
+   "operator": "Marta Gil",
+   "inputL": 350,
+   "outputKg": 157.5,
+   "minutes": 74
+  },
+  {
+   "dayOffset": -14,
+   "product": "P-MOZ",
+   "operator": "Marta Gil",
+   "inputL": 1160,
+   "outputKg": 123.2,
+   "minutes": 145
+  },
+  {
+   "dayOffset": -13,
+   "product": "P-MAN",
+   "operator": "Marta Gil",
+   "inputL": 300,
+   "outputKg": 144.6,
+   "minutes": 97
+  },
+  {
+   "dayOffset": -13,
+   "product": "P-MOZ",
+   "operator": "Marta Gil",
+   "inputL": 740,
+   "outputKg": 70.3,
+   "minutes": 151
+  },
+  {
+   "dayOffset": -13,
+   "product": "P-GRI",
+   "operator": "Marta Gil",
+   "inputL": 470,
+   "outputKg": 134.4,
+   "minutes": 484
+  },
+  {
+   "dayOffset": -13,
+   "product": "P-GRI",
+   "operator": "Luis Pardo",
+   "inputL": 480,
+   "outputKg": 129.5,
+   "minutes": 473
+  },
+  {
+   "dayOffset": -12,
+   "product": "P-MAN",
+   "operator": "Luis Pardo",
+   "inputL": 330,
+   "outputKg": 156.2,
+   "minutes": 93
+  },
+  {
+   "dayOffset": -12,
+   "product": "P-MOZ",
+   "operator": "Marta Gil",
+   "inputL": 1170,
+   "outputKg": 119.8,
+   "minutes": 155
+  },
+  {
+   "dayOffset": -12,
+   "product": "P-CAM",
+   "operator": "Luis Pardo",
+   "inputL": 860,
+   "outputKg": 98.2,
+   "minutes": 124
+  },
+  {
+   "dayOffset": -12,
+   "product": "P-MOZ",
+   "operator": "Ana Rojas",
+   "inputL": 1040,
+   "outputKg": 96.9,
+   "minutes": 182
+  },
+  {
+   "dayOffset": -11,
+   "product": "P-CUA",
+   "operator": "Marta Gil",
+   "inputL": 390,
+   "outputKg": 59.1,
+   "minutes": 62
+  },
+  {
+   "dayOffset": -11,
+   "product": "P-ARE",
+   "operator": "Luis Pardo",
+   "inputL": 230,
+   "outputKg": 88.8,
+   "minutes": 237
+  },
+  {
+   "dayOffset": -11,
+   "product": "P-GRI",
+   "operator": "Ana Rojas",
+   "inputL": 430,
+   "outputKg": 116.6,
+   "minutes": 511
+  },
+  {
+   "dayOffset": -10,
+   "product": "P-ARE",
+   "operator": "Luis Pardo",
+   "inputL": 310,
+   "outputKg": 122.0,
+   "minutes": 181
+  },
+  {
+   "dayOffset": -10,
+   "product": "P-MOZ",
+   "operator": "Ana Rojas",
+   "inputL": 850,
+   "outputKg": 90.7,
+   "minutes": 195
+  },
+  {
+   "dayOffset": -10,
+   "product": "P-ARE",
+   "operator": "Ana Rojas",
+   "inputL": 290,
+   "outputKg": 102.7,
+   "minutes": 194
+  },
+  {
+   "dayOffset": -9,
+   "product": "P-CUA",
+   "operator": "Marta Gil",
+   "inputL": 280,
+   "outputKg": 44.4,
+   "minutes": 58
+  },
+  {
+   "dayOffset": -9,
+   "product": "P-CAM",
+   "operator": "Ana Rojas",
+   "inputL": 500,
+   "outputKg": 62.0,
+   "minutes": 91
+  },
+  {
+   "dayOffset": -9,
+   "product": "P-CAM",
+   "operator": "Marta Gil",
+   "inputL": 750,
+   "outputKg": 81.7,
+   "minutes": 114
+  },
+  {
+   "dayOffset": -8,
+   "product": "P-CAM",
+   "operator": "Marta Gil",
+   "inputL": 740,
+   "outputKg": 85.3,
+   "minutes": 119
+  },
+  {
+   "dayOffset": -8,
+   "product": "P-CAM",
+   "operator": "Luis Pardo",
+   "inputL": 540,
+   "outputKg": 66.4,
+   "minutes": 94
+  },
+  {
+   "dayOffset": -8,
+   "product": "P-CAM",
+   "operator": "Ana Rojas",
+   "inputL": 750,
+   "outputKg": 92.9,
+   "minutes": 130
+  },
+  {
+   "dayOffset": -7,
+   "product": "P-GRI",
+   "operator": "Ana Rojas",
+   "inputL": 650,
+   "outputKg": 167.6,
+   "minutes": 455
+  },
+  {
+   "dayOffset": -7,
+   "product": "P-CUA",
+   "operator": "Ana Rojas",
+   "inputL": 490,
+   "outputKg": 74.7,
+   "minutes": 74
+  },
+  {
+   "dayOffset": -6,
+   "product": "P-CUA",
+   "operator": "Luis Pardo",
+   "inputL": 480,
+   "outputKg": 73.3,
+   "minutes": 56
+  },
+  {
+   "dayOffset": -6,
+   "product": "P-CAM",
+   "operator": "Marta Gil",
+   "inputL": 610,
+   "outputKg": 74.6,
+   "minutes": 114
+  },
+  {
+   "dayOffset": -6,
+   "product": "P-DCR",
+   "operator": "Ana Rojas",
+   "inputL": 800,
+   "outputKg": 79.6,
+   "minutes": 208
+  },
+  {
+   "dayOffset": -5,
+   "product": "P-CUA",
+   "operator": "Marta Gil",
+   "inputL": 450,
+   "outputKg": 69.9,
+   "minutes": 54
+  },
+  {
+   "dayOffset": -5,
+   "product": "P-MAN",
+   "operator": "Ana Rojas",
+   "inputL": 150,
+   "outputKg": 67.6,
+   "minutes": 68
+  },
+  {
+   "dayOffset": -5,
+   "product": "P-CUA",
+   "operator": "Luis Pardo",
+   "inputL": 260,
+   "outputKg": 37.5,
+   "minutes": 66
+  },
+  {
+   "dayOffset": -5,
+   "product": "P-GRI",
+   "operator": "Marta Gil",
+   "inputL": 360,
+   "outputKg": 98.5,
+   "minutes": 495
+  },
+  {
+   "dayOffset": -4,
+   "product": "P-CAM",
+   "operator": "Luis Pardo",
+   "inputL": 500,
+   "outputKg": 58.9,
+   "minutes": 105
+  },
+  {
+   "dayOffset": -4,
+   "product": "P-CAM",
+   "operator": "Marta Gil",
+   "inputL": 830,
+   "outputKg": 103.7,
+   "minutes": 122
+  },
+  {
+   "dayOffset": -3,
+   "product": "P-MOZ",
+   "operator": "Luis Pardo",
+   "inputL": 930,
+   "outputKg": 96.9,
+   "minutes": 145
+  },
+  {
+   "dayOffset": -3,
+   "product": "P-MOZ",
+   "operator": "Marta Gil",
+   "inputL": 920,
+   "outputKg": 97.1,
+   "minutes": 144
+  },
+  {
+   "dayOffset": -2,
+   "product": "P-DCR",
+   "operator": "Ana Rojas",
+   "inputL": 730,
+   "outputKg": 76.6,
+   "minutes": 171
+  },
+  {
+   "dayOffset": -2,
+   "product": "P-DCR",
+   "operator": "Ana Rojas",
+   "inputL": 600,
+   "outputKg": 63.9,
+   "minutes": 199
+  },
+  {
+   "dayOffset": -2,
+   "product": "P-MOZ",
+   "operator": "Ana Rojas",
+   "inputL": 950,
+   "outputKg": 94.9,
+   "minutes": 152
+  },
+  {
+   "dayOffset": -2,
+   "product": "P-MAN",
+   "operator": "Ana Rojas",
+   "inputL": 190,
+   "outputKg": 91.0,
+   "minutes": 100
+  },
+  {
+   "dayOffset": -1,
+   "product": "P-DCR",
+   "operator": "Marta Gil",
+   "inputL": 810,
+   "outputKg": 85.8,
+   "minutes": 156
+  },
+  {
+   "dayOffset": -1,
+   "product": "P-GRI",
+   "operator": "Marta Gil",
+   "inputL": 440,
+   "outputKg": 110.1,
+   "minutes": 490
+  },
+  {
+   "dayOffset": -1,
+   "product": "P-CUA",
+   "operator": "Luis Pardo",
+   "inputL": 390,
+   "outputKg": 64.5,
+   "minutes": 54
+  },
+  {
+   "dayOffset": -1,
+   "product": "P-MOZ",
+   "operator": "Marta Gil",
+   "inputL": 870,
+   "outputKg": 81.9,
+   "minutes": 146
+  }
  ]
 }

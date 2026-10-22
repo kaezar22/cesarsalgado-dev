@@ -74,6 +74,42 @@ export const DEMOS = {
       },
     },
   },
+  production: {
+    slug: "production",
+    art: ["Mozzarella · L-3 · 2 h 40 min", "820 L → 84,1 kg", "9,75 L/kg · std 9,9 ✓"],
+    en: {
+      tag: "Operations · Mobile app",
+      title: "Plant production log",
+      card: "Operators log each batch from their phone: milk in, process time with pauses, kilos out. The supervisor sees how many liters each product really takes per kilo versus the standard.",
+      lead:
+        "The operator’s side runs on a phone at the vat: start the shift, pick a product, register each pour of milk, time the process (pauses don’t count) and weigh the finished product. Every batch feeds the supervisor’s report, where yield is compared with each product’s standard. The demo clock runs ten minutes per second, so a full batch takes a few seconds.",
+      how: {
+        title: "How it works in production",
+        items: [
+          "A version of this runs on the operators’ phones at a food processor in Bogotá, logging yield, waste and time per batch.",
+          "Every tap is saved the moment it happens: if the phone reloads or loses signal, the shift resumes exactly where it was.",
+          "Batches land in Google Sheets with a per-product summary that recalculates every time a shift is closed.",
+          "The result is a real yield and productivity database instead of estimates: which products, operators and days drift from the standard.",
+        ],
+      },
+    },
+    es: {
+      tag: "Operaciones · App móvil",
+      title: "Registro de producción en planta",
+      card: "Los operarios registran cada lote desde el celular: leche que entra, tiempo de proceso con pausas y kilos que salen. El supervisor ve cuántos litros gasta de verdad cada producto por kilo frente al estándar.",
+      lead:
+        "El lado del operario funciona en un celular junto a la tina: inicia el turno, elige el producto, registra cada tanda de leche, mide el tiempo de proceso (las pausas no cuentan) y pesa el producto terminado. Cada lote alimenta el informe del supervisor, que compara el rendimiento con el estándar de cada producto. El reloj de la demo corre diez minutos por segundo, así un lote completo toma pocos segundos.",
+      how: {
+        title: "Cómo funciona en producción",
+        items: [
+          "Una versión de esto funciona en los celulares de los operarios de una procesadora de alimentos en Bogotá y registra rendimiento, merma y tiempo por lote.",
+          "Cada toque se guarda en el momento: si el celular se recarga o pierde la señal, el turno sigue exactamente donde iba.",
+          "Los lotes llegan a Google Sheets con un resumen por producto que se recalcula cada vez que se cierra un turno.",
+          "El resultado es una base real de rendimiento y productividad en vez de estimaciones: qué productos, operarios y días se salen del estándar.",
+        ],
+      },
+    },
+  },
 } as const;
 
 export type DemoKey = keyof typeof DEMOS;

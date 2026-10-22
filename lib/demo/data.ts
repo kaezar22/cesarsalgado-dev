@@ -50,6 +50,17 @@ export type Payable = {
   advance?: boolean;
 };
 
+export type ProdProduct = { code: string; en: string; es: string; input: "milk" | "cream"; stdLPerKg: number };
+export type ProdBatch = {
+  dayOffset: number;
+  product: string;
+  operator: string;
+  inputL: number;
+  outputKg: number;
+  minutes: number;
+  mine?: boolean;
+};
+
 type Data = {
   company: { name: string; nit: string; city: string; address: string; phone: string; email: string };
   products: Product[];
@@ -59,6 +70,9 @@ type Data = {
   pendingOrders: Order[];
   receivables: Receivable[];
   payables: Payable[];
+  productionProducts: ProdProduct[];
+  operators: string[];
+  production: ProdBatch[];
 };
 
 export const DATA = raw as unknown as Data;

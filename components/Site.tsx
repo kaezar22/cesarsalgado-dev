@@ -185,9 +185,9 @@ export default function Site({ lang }: { lang: Lang }) {
             {Object.values(DEMOS).map((d) => (
               <Link key={d.slug} className="dm-card" href={`${lang === "es" ? "/es" : ""}/demos/${d.slug}`}>
                 <div className="dm-card-art" aria-hidden>
-                  <span className="a1">“forno chico”</span>
-                  <span className="a2">→ Forno Vivo Chicó · 91%</span>
-                  <span className="a3">FE-D7001.pdf ✓</span>
+                  <span className="a1">{d.art[0]}</span>
+                  <span className="a2">{d.art[1]}</span>
+                  <span className="a3">{d.art[2]}</span>
                 </div>
                 <div className="dm-card-body">
                   <div className="cs-tag">{d[lang].tag}</div>

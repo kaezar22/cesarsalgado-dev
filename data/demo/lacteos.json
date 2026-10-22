@@ -804,29 +804,29 @@
    ]
   },
   {
-   "clientId": "C02",
+   "clientId": "C01",
    "invoice": "FE-5123",
-   "point": "Brunch Club Parque 93",
-   "issueOffset": -18,
-   "dueOffset": 27,
-   "original": 326800,
-   "balance": 326800,
+   "point": "Mirador Bakery Cedritos",
+   "issueOffset": -36,
+   "dueOffset": -6,
+   "original": 1344800,
+   "balance": 1344800,
    "lines": [
     {
-     "code": "YOG-GRI-NAT-1K",
+     "code": "YOG-BEB-MOR-1L",
+     "qty": 12
+    },
+    {
+     "code": "YOG-GRI-NAT-150",
      "qty": 4
     },
     {
-     "code": "QSO-COS-500",
-     "qty": 6
-    },
-    {
-     "code": "LEC-ENT-1L",
+     "code": "QSO-DCR-2K5",
      "qty": 24
     },
     {
-     "code": "YOG-BEB-MEL-1L",
-     "qty": 10
+     "code": "LEC-ENT-1L",
+     "qty": 5
     }
    ]
   },
@@ -834,70 +834,89 @@
    "clientId": "C02",
    "invoice": "FE-5126",
    "point": "Brunch Club Parque 93",
-   "issueOffset": -27,
-   "dueOffset": 18,
-   "original": 635200,
-   "balance": 635200,
+   "issueOffset": -39,
+   "dueOffset": 6,
+   "original": 62400,
+   "balance": 62400,
    "lines": [
     {
-     "code": "YOG-GRI-NAT-150",
-     "qty": 2
+     "code": "QSO-COS-500",
+     "qty": 4
     },
     {
-     "code": "YOG-BEB-FRE-1L",
-     "qty": 8
-    },
-    {
-     "code": "QSO-MOZ-BLQ-2K5",
-     "qty": 8
-    },
-    {
-     "code": "ARE-500",
-     "qty": 2
-    },
-    {
-     "code": "YOG-GRI-NAT-1K",
-     "qty": 2
+     "code": "LEC-ENT-1L",
+     "qty": 4
     }
    ]
   },
   {
    "clientId": "C02",
-   "invoice": "FE-5130",
-   "point": "Brunch Club Parque 93",
-   "issueOffset": -40,
-   "dueOffset": 5,
-   "original": 1240900,
-   "balance": 1240900,
+   "invoice": "FE-5129",
+   "point": "Altamar Cevichería",
+   "issueOffset": -54,
+   "dueOffset": -9,
+   "original": 933000,
+   "balance": 466500,
+   "lines": [
+    {
+     "code": "LPO-ENT-25K",
+     "qty": 1
+    },
+    {
+     "code": "YOG-BEB-MOR-1L",
+     "qty": 2
+    },
+    {
+     "code": "CUA-500",
+     "qty": 3
+    },
+    {
+     "code": "YOG-BEB-FRE-200",
+     "qty": 10
+    },
+    {
+     "code": "QSO-MOZ-BLQ-2K5",
+     "qty": 3
+    }
+   ]
+  },
+  {
+   "clientId": "C02",
+   "invoice": "FE-5131",
+   "point": "La Terraza 93",
+   "issueOffset": -5,
+   "dueOffset": 40,
+   "original": 806300,
+   "balance": 806300,
    "lines": [
     {
      "code": "QSO-DCR-2K5",
+     "qty": 3
+    },
+    {
+     "code": "LEC-ENT-1L",
+     "qty": 12
+    },
+    {
+     "code": "QSO-CAM-500",
+     "qty": 12
+    },
+    {
+     "code": "QSO-PAR-RAL-1K",
      "qty": 4
     },
     {
      "code": "ARE-5K",
      "qty": 4
-    },
-    {
-     "code": "YOG-BEB-FRE-1L",
-     "qty": 24
-    },
-    {
-     "code": "QSO-CRE-1K",
-     "qty": 5
-    },
-    {
-     "code": "QSO-PAR-RAL-1K",
-     "qty": 10
     }
    ]
   },
   {
-   "clientId": "C03",
-   "invoice": "FE-5132",
-   "point": "Sabana Real Spa & Bistró",
+   "clientId": "C02",
+   "invoice": "FE-5133",
+   "point": "La Terraza 93",
    "issueOffset": -24,
-   "dueOffset": 36,
+   "dueOffset": 21,
    "original": 110400,
    "balance": 110400,
    "lines": [
@@ -912,11 +931,11 @@
    ]
   },
   {
-   "clientId": "C03",
-   "invoice": "FE-5134",
-   "point": "Hotel Sabana Real",
+   "clientId": "C02",
+   "invoice": "FE-5135",
+   "point": "Altamar Cevichería",
    "issueOffset": -93,
-   "dueOffset": -33,
+   "dueOffset": -48,
    "original": 241800,
    "balance": 241800,
    "lines": [
@@ -931,142 +950,246 @@
    ]
   },
   {
-   "clientId": "C05",
-   "invoice": "FE-5135",
-   "point": "Green Bowl Zona G",
-   "issueOffset": -9,
-   "dueOffset": 21,
-   "original": 1081400,
-   "balance": 1081400,
-   "lines": [
-    {
-     "code": "LPO-ENT-400",
-     "qty": 3
-    },
-    {
-     "code": "LPO-ENT-25K",
-     "qty": 1
-    },
-    {
-     "code": "YOG-BEB-MEL-1L",
-     "qty": 24
-    },
-    {
-     "code": "CRE-AGR-500",
-     "qty": 8
-    }
-   ]
-  },
-  {
-   "clientId": "C05",
-   "invoice": "FE-5136",
-   "point": "Açaí Lab",
-   "issueOffset": -42,
-   "dueOffset": -12,
-   "original": 244000,
-   "balance": 244000,
+   "clientId": "C03",
+   "invoice": "FE-5139",
+   "point": "Hotel Sabana Real",
+   "issueOffset": -46,
+   "dueOffset": 14,
+   "original": 586600,
+   "balance": 293300,
    "lines": [
     {
      "code": "KUM-1L",
      "qty": 10
     },
     {
-     "code": "YOG-GRI-NAT-1K",
+     "code": "QSO-PAR-RAL-1K",
      "qty": 6
     },
     {
-     "code": "YOG-GRI-NAT-150",
-     "qty": 10
-    }
-   ]
-  },
-  {
-   "clientId": "C06",
-   "invoice": "FE-5139",
-   "point": "Forno Vivo Chía",
-   "issueOffset": -4,
-   "dueOffset": 26,
-   "original": 321600,
-   "balance": 321600,
-   "lines": [
-    {
-     "code": "YOG-BEB-FRE-1L",
-     "qty": 8
-    },
-    {
-     "code": "LEC-ENT-1L",
-     "qty": 8
-    },
-    {
-     "code": "MAN-SAL-250",
+     "code": "QSO-CRE-1K",
      "qty": 12
-    },
-    {
-     "code": "MAN-SIN-2K5",
-     "qty": 2
     }
    ]
   },
   {
-   "clientId": "C06",
-   "invoice": "FE-5140",
-   "point": "Forno Vivo Cedritos",
-   "issueOffset": -29,
-   "dueOffset": 1,
-   "original": 664800,
-   "balance": 332400,
+   "clientId": "C03",
+   "invoice": "FE-5143",
+   "point": "Hotel Sabana Real",
+   "issueOffset": -69,
+   "dueOffset": -9,
+   "original": 127600,
+   "balance": 127600,
    "lines": [
     {
-     "code": "QSO-COS-500",
-     "qty": 24
-    },
-    {
-     "code": "LEC-ENT-1L",
-     "qty": 6
-    },
-    {
-     "code": "ARE-500",
-     "qty": 10
+     "code": "CON-LAT-395",
+     "qty": 5
     },
     {
      "code": "YOG-BEB-FRE-1L",
-     "qty": 6
+     "qty": 2
     },
     {
-     "code": "QSO-MOZ-TAJ-1K",
-     "qty": 8
+     "code": "CON-DOY-1K",
+     "qty": 3
+    },
+    {
+     "code": "YOG-BEB-FRE-200",
+     "qty": 12
     }
    ]
   },
   {
-   "clientId": "C08",
-   "invoice": "FE-5144",
-   "point": "Club Los Arrayanes",
-   "issueOffset": -55,
-   "dueOffset": -10,
-   "original": 649000,
-   "balance": 649000,
+   "clientId": "C03",
+   "invoice": "FE-5145",
+   "point": "Sabana Real Spa & Bistró",
+   "issueOffset": -5,
+   "dueOffset": 55,
+   "original": 565400,
+   "balance": 565400,
    "lines": [
     {
-     "code": "LPO-DES-400",
+     "code": "CON-DOY-1K",
      "qty": 24
-    },
-    {
-     "code": "YOG-BEB-MOR-1L",
-     "qty": 2
     },
     {
      "code": "YOG-BEB-MEL-1L",
-     "qty": 24
+     "qty": 5
+    },
+    {
+     "code": "QSO-MOZ-TAJ-1K",
+     "qty": 3
+    },
+    {
+     "code": "MAN-SAL-250",
+     "qty": 6
     }
    ]
   },
   {
-   "clientId": "C08",
-   "invoice": "FE-5146",
-   "point": "Club Los Arrayanes",
-   "issueOffset": -20,
+   "clientId": "C03",
+   "invoice": "FE-5148",
+   "point": "Hotel Sabana Real",
+   "issueOffset": -74,
+   "dueOffset": -14,
+   "original": 161900,
+   "balance": 113300,
+   "lines": [
+    {
+     "code": "LEC-ENT-1L",
+     "qty": 6
+    },
+    {
+     "code": "MAN-SAL-250",
+     "qty": 3
+    },
+    {
+     "code": "YOG-BEB-MOR-1L",
+     "qty": 10
+    },
+    {
+     "code": "YOG-BEB-FRE-1L",
+     "qty": 4
+    }
+   ]
+  },
+  {
+   "clientId": "C04",
+   "invoice": "FE-5149",
+   "point": "Tres Cucharas Andino",
+   "issueOffset": -3,
+   "dueOffset": 27,
+   "original": 171600,
+   "balance": 171600,
+   "lines": [
+    {
+     "code": "CON-DOY-1K",
+     "qty": 2
+    },
+    {
+     "code": "ARE-500",
+     "qty": 2
+    },
+    {
+     "code": "LPO-DES-400",
+     "qty": 3
+    },
+    {
+     "code": "KUM-1L",
+     "qty": 5
+    },
+    {
+     "code": "QSO-COS-500",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "clientId": "C04",
+   "invoice": "FE-5150",
+   "point": "Tres Cucharas Andino",
+   "issueOffset": -42,
+   "dueOffset": -12,
+   "original": 1147300,
+   "balance": 1147300,
+   "lines": [
+    {
+     "code": "CRE-LEC-1L",
+     "qty": 10
+    },
+    {
+     "code": "CRE-AGR-500",
+     "qty": 8
+    },
+    {
+     "code": "LEC-DES-1L",
+     "qty": 5
+    },
+    {
+     "code": "YOG-GRI-FRE-150",
+     "qty": 12
+    },
+    {
+     "code": "ARE-5K",
+     "qty": 10
+    }
+   ]
+  },
+  {
+   "clientId": "C05",
+   "invoice": "FE-5151",
+   "point": "Green Bowl Zona G",
+   "issueOffset": -39,
+   "dueOffset": -9,
+   "original": 258200,
+   "balance": 258200,
+   "lines": [
+    {
+     "code": "QSO-CAM-500",
+     "qty": 10
+    },
+    {
+     "code": "LPO-DES-400",
+     "qty": 8
+    }
+   ]
+  },
+  {
+   "clientId": "C05",
+   "invoice": "FE-5154",
+   "point": "Green Bowl Zona G",
+   "issueOffset": -27,
+   "dueOffset": 3,
+   "original": 89900,
+   "balance": 62900,
+   "lines": [
+    {
+     "code": "LPO-ENT-400",
+     "qty": 4
+    },
+    {
+     "code": "YOG-BEB-FRE-1L",
+     "qty": 3
+    }
+   ]
+  },
+  {
+   "clientId": "C05",
+   "invoice": "FE-5158",
+   "point": "Green Bowl Zona G",
+   "issueOffset": -5,
    "dueOffset": 25,
+   "original": 1394500,
+   "balance": 976100,
+   "lines": [
+    {
+     "code": "MAN-SIN-2K5",
+     "qty": 10
+    },
+    {
+     "code": "YOG-BEB-MOR-1L",
+     "qty": 5
+    },
+    {
+     "code": "QSO-MOZ-TAJ-1K",
+     "qty": 10
+    },
+    {
+     "code": "QSO-COS-500",
+     "qty": 5
+    },
+    {
+     "code": "QSO-MOZ-BLQ-2K5",
+     "qty": 4
+    }
+   ]
+  },
+  {
+   "clientId": "C05",
+   "invoice": "FE-5160",
+   "point": "Açaí Lab",
+   "issueOffset": -20,
+   "dueOffset": 10,
    "original": 173200,
    "balance": 173200,
    "lines": [
@@ -1085,11 +1208,11 @@
    ]
   },
   {
-   "clientId": "C08",
-   "invoice": "FE-5149",
-   "point": "Club Los Arrayanes",
+   "clientId": "C05",
+   "invoice": "FE-5163",
+   "point": "Açaí Lab",
    "issueOffset": -24,
-   "dueOffset": 21,
+   "dueOffset": 6,
    "original": 342600,
    "balance": 342600,
    "lines": [
@@ -1104,40 +1227,90 @@
    ]
   },
   {
-   "clientId": "C10",
-   "invoice": "FE-5152",
-   "point": "Polar Gelato Usaquén",
-   "issueOffset": -2,
-   "dueOffset": 28,
-   "original": 140900,
-   "balance": 140900,
+   "clientId": "C05",
+   "invoice": "FE-5165",
+   "point": "Green Bowl Zona G",
+   "issueOffset": -86,
+   "dueOffset": -56,
+   "original": 143200,
+   "balance": 143200,
    "lines": [
     {
-     "code": "CON-LAT-395",
+     "code": "CRE-AGR-500",
+     "qty": 12
+    },
+    {
+     "code": "YOG-NAT-SA-1K",
      "qty": 2
-    },
-    {
-     "code": "CUA-500",
-     "qty": 4
-    },
-    {
-     "code": "LEC-DES-1L",
-     "qty": 3
-    },
-    {
-     "code": "QSO-COS-500",
-     "qty": 6
     }
    ]
   },
   {
-   "clientId": "C10",
-   "invoice": "FE-5155",
-   "point": "Polar Gelato Usaquén",
+   "clientId": "C06",
+   "invoice": "FE-5168",
+   "point": "Forno Vivo Chicó",
+   "issueOffset": -31,
+   "dueOffset": -1,
+   "original": 1284800,
+   "balance": 1284800,
+   "lines": [
+    {
+     "code": "QSO-DCR-2K5",
+     "qty": 8
+    },
+    {
+     "code": "CON-DOY-1K",
+     "qty": 12
+    },
+    {
+     "code": "YOG-BEB-FRE-200",
+     "qty": 12
+    },
+    {
+     "code": "QSO-MOZ-TAJ-1K",
+     "qty": 24
+    }
+   ]
+  },
+  {
+   "clientId": "C06",
+   "invoice": "FE-5171",
+   "point": "Forno Vivo Chicó",
+   "issueOffset": -22,
+   "dueOffset": 8,
+   "original": 527200,
+   "balance": 527200,
+   "lines": [
+    {
+     "code": "YOG-BEB-MOR-1L",
+     "qty": 24
+    },
+    {
+     "code": "QSO-CRE-1K",
+     "qty": 10
+    },
+    {
+     "code": "ARE-500",
+     "qty": 2
+    },
+    {
+     "code": "YOG-GRI-NAT-150",
+     "qty": 4
+    },
+    {
+     "code": "QSO-MOZ-TAJ-1K",
+     "qty": 3
+    }
+   ]
+  },
+  {
+   "clientId": "C06",
+   "invoice": "FE-5174",
+   "point": "Forno Vivo Chía",
    "issueOffset": -93,
    "dueOffset": -63,
-   "original": 264300,
-   "balance": 264300,
+   "original": 243600,
+   "balance": 243600,
    "lines": [
     {
      "code": "ARE-500",
@@ -1150,188 +1323,142 @@
    ]
   },
   {
-   "clientId": "C11",
-   "invoice": "FE-5156",
-   "point": "Donde Mamá Inés",
-   "issueOffset": -19,
-   "dueOffset": -4,
-   "original": 276600,
-   "balance": 276600,
+   "clientId": "C06",
+   "invoice": "FE-5177",
+   "point": "Forno Vivo Chía",
+   "issueOffset": -7,
+   "dueOffset": 23,
+   "original": 1170400,
+   "balance": 585200,
    "lines": [
     {
-     "code": "YOG-BEB-FRE-200",
-     "qty": 12
+     "code": "QSO-MOZ-BLQ-2K5",
+     "qty": 4
     },
     {
-     "code": "CON-LAT-395",
-     "qty": 10
-    },
-    {
-     "code": "LEC-DES-1L",
-     "qty": 8
-    },
-    {
-     "code": "YOG-GRI-NAT-150",
+     "code": "MAN-SAL-250",
      "qty": 24
     },
     {
-     "code": "LEC-ENT-1L",
-     "qty": 4
+     "code": "CUA-500",
+     "qty": 3
+    },
+    {
+     "code": "LPO-ENT-25K",
+     "qty": 1
+    },
+    {
+     "code": "CRE-AGR-500",
+     "qty": 3
     }
    ]
   },
   {
-   "clientId": "C11",
-   "invoice": "FE-5157",
-   "point": "Donde Mamá Inés",
-   "issueOffset": -40,
-   "dueOffset": -25,
-   "original": 143700,
-   "balance": 143700,
+   "clientId": "C06",
+   "invoice": "FE-5180",
+   "point": "Forno Vivo Chicó",
+   "issueOffset": -35,
+   "dueOffset": -5,
+   "original": 496300,
+   "balance": 496300,
    "lines": [
     {
-     "code": "CRE-LEC-1L",
+     "code": "YOG-GRI-FRE-150",
      "qty": 5
     },
     {
-     "code": "YOG-BEB-MOR-1L",
+     "code": "LPO-ENT-400",
      "qty": 4
     },
     {
+     "code": "MAN-SIN-2K5",
+     "qty": 6
+    },
+    {
      "code": "LEC-ENT-1L",
-     "qty": 3
+     "qty": 6
     }
    ]
   },
   {
-   "clientId": "C11",
-   "invoice": "FE-5160",
-   "point": "Donde Mamá Inés",
-   "issueOffset": -35,
-   "dueOffset": -20,
-   "original": 1090800,
-   "balance": 1090800,
+   "clientId": "C08",
+   "invoice": "FE-5186",
+   "point": "Club Los Arrayanes",
+   "issueOffset": -30,
+   "dueOffset": 15,
+   "original": 1115400,
+   "balance": 1115400,
    "lines": [
     {
-     "code": "LEC-DES-1L",
-     "qty": 12
+     "code": "LPO-DES-400",
+     "qty": 10
     },
     {
-     "code": "YOG-BEB-FRE-1L",
-     "qty": 3
+     "code": "LPO-ENT-25K",
+     "qty": 1
     },
     {
      "code": "QSO-MOZ-TAJ-1K",
-     "qty": 24
+     "qty": 5
     },
-    {
-     "code": "CUA-500",
-     "qty": 24
-    }
-   ]
-  },
-  {
-   "clientId": "C12",
-   "invoice": "FE-5163",
-   "point": "Seis Rooftop Bar",
-   "issueOffset": -46,
-   "dueOffset": -16,
-   "original": 273300,
-   "balance": 273300,
-   "lines": [
-    {
-     "code": "YOG-GRI-NAT-1K",
-     "qty": 3
-    },
-    {
-     "code": "LPO-DES-400",
-     "qty": 12
-    }
-   ]
-  },
-  {
-   "clientId": "C12",
-   "invoice": "FE-5165",
-   "point": "Seis Rooftop Bar",
-   "issueOffset": -23,
-   "dueOffset": 7,
-   "original": 728400,
-   "balance": 364200,
-   "lines": [
     {
      "code": "QSO-COS-500",
-     "qty": 8
-    },
-    {
-     "code": "CUA-500",
-     "qty": 12
-    },
-    {
-     "code": "MAN-SAL-250",
-     "qty": 10
-    },
-    {
-     "code": "QSO-DCR-2K5",
-     "qty": 8
+     "qty": 4
     }
    ]
   },
   {
-   "clientId": "C12",
-   "invoice": "FE-5167",
-   "point": "Seis Rooftop Bar",
-   "issueOffset": -74,
-   "dueOffset": -44,
-   "original": 428000,
-   "balance": 428000,
+   "clientId": "C08",
+   "invoice": "FE-5188",
+   "point": "Club Los Arrayanes",
+   "issueOffset": -36,
+   "dueOffset": 9,
+   "original": 550200,
+   "balance": 550200,
    "lines": [
     {
-     "code": "QSO-COS-500",
-     "qty": 3
-    },
-    {
-     "code": "KUM-1L",
-     "qty": 8
-    },
-    {
-     "code": "QSO-DCR-2K5",
-     "qty": 6
-    }
-   ]
-  },
-  {
-   "clientId": "C12",
-   "invoice": "FE-5170",
-   "point": "Seis Rooftop Bar",
-   "issueOffset": -31,
-   "dueOffset": -1,
-   "original": 401600,
-   "balance": 401600,
-   "lines": [
-    {
-     "code": "YOG-BEB-MOR-1L",
-     "qty": 6
-    },
-    {
-     "code": "MAN-SAL-250",
-     "qty": 6
-    },
-    {
-     "code": "LPO-DES-400",
+     "code": "CON-LAT-395",
      "qty": 12
     },
     {
      "code": "YOG-BEB-FRE-1L",
+     "qty": 6
+    },
+    {
+     "code": "QSO-DCR-2K5",
+     "qty": 4
+    },
+    {
+     "code": "KUM-1L",
+     "qty": 24
+    }
+   ]
+  },
+  {
+   "clientId": "C08",
+   "invoice": "FE-5191",
+   "point": "Club Los Arrayanes",
+   "issueOffset": -20,
+   "dueOffset": 25,
+   "original": 210200,
+   "balance": 210200,
+   "lines": [
+    {
+     "code": "KUM-1L",
+     "qty": 12
+    },
+    {
+     "code": "QSO-CAM-500",
      "qty": 10
     }
    ]
   },
   {
-   "clientId": "C12",
-   "invoice": "FE-5174",
-   "point": "Seis Rooftop Bar",
+   "clientId": "C08",
+   "invoice": "FE-5195",
+   "point": "Club Los Arrayanes",
    "issueOffset": -45,
-   "dueOffset": -15,
+   "dueOffset": 0,
    "original": 469200,
    "balance": 469200,
    "lines": [
@@ -1346,66 +1473,197 @@
    ]
   },
   {
-   "clientId": "C13",
-   "invoice": "FE-5178",
-   "point": "Nogal Catering",
-   "issueOffset": -9,
-   "dueOffset": 36,
-   "original": 311000,
-   "balance": 311000,
+   "clientId": "C08",
+   "invoice": "FE-5196",
+   "point": "Club Los Arrayanes",
+   "issueOffset": -18,
+   "dueOffset": 27,
+   "original": 1136000,
+   "balance": 795200,
    "lines": [
     {
-     "code": "LPO-ENT-400",
-     "qty": 6
+     "code": "MAN-SIN-2K5",
+     "qty": 12
     },
     {
-     "code": "YOG-BEB-MEL-1L",
-     "qty": 4
+     "code": "CRE-AGR-500",
+     "qty": 12
     },
     {
-     "code": "YOG-GRI-NAT-150",
+     "code": "CRE-LEC-1L",
      "qty": 8
     },
     {
-     "code": "KUM-1L",
-     "qty": 10
-    },
-    {
-     "code": "MAN-SAL-250",
-     "qty": 12
+     "code": "QSO-COS-500",
+     "qty": 2
     }
    ]
   },
   {
-   "clientId": "C13",
-   "invoice": "FE-5180",
-   "point": "Nogal Catering",
-   "issueOffset": -3,
-   "dueOffset": 42,
-   "original": 118800,
-   "balance": 118800,
+   "clientId": "C09",
+   "invoice": "FE-5198",
+   "point": "Postres de la 85",
+   "issueOffset": -4,
+   "dueOffset": 4,
+   "original": 295700,
+   "balance": 295700,
    "lines": [
     {
-     "code": "LPO-DES-400",
+     "code": "ARE-500",
+     "qty": 6
+    },
+    {
+     "code": "QSO-CRE-1K",
+     "qty": 8
+    },
+    {
+     "code": "MAN-SAL-250",
      "qty": 3
+    }
+   ]
+  },
+  {
+   "clientId": "C09",
+   "invoice": "FE-5200",
+   "point": "Postres de la 85",
+   "issueOffset": -14,
+   "dueOffset": -6,
+   "original": 503500,
+   "balance": 251700,
+   "lines": [
+    {
+     "code": "QSO-DCR-2K5",
+     "qty": 5
     },
     {
      "code": "YOG-NAT-SA-1K",
+     "qty": 4
+    },
+    {
+     "code": "QSO-CRE-1K",
      "qty": 6
     }
    ]
   },
   {
-   "clientId": "C13",
-   "invoice": "FE-5184",
-   "point": "Nogal Catering",
-   "issueOffset": -67,
-   "dueOffset": -22,
-   "original": 1114200,
-   "balance": 779900,
+   "clientId": "C09",
+   "invoice": "FE-5203",
+   "point": "Postres de la 85",
+   "issueOffset": -5,
+   "dueOffset": 3,
+   "original": 610500,
+   "balance": 610500,
    "lines": [
     {
+     "code": "QSO-COS-500",
+     "qty": 24
+    },
+    {
+     "code": "YOG-GRI-FRE-150",
+     "qty": 5
+    },
+    {
+     "code": "YOG-BEB-MEL-1L",
+     "qty": 12
+    },
+    {
      "code": "CRE-LEC-1L",
+     "qty": 8
+    }
+   ]
+  },
+  {
+   "clientId": "C09",
+   "invoice": "FE-5206",
+   "point": "Postres de la 85",
+   "issueOffset": -98,
+   "dueOffset": -90,
+   "original": 1168400,
+   "balance": 1168400,
+   "lines": [
+    {
+     "code": "YOG-BEB-FRE-200",
+     "qty": 10
+    },
+    {
+     "code": "QSO-MOZ-TAJ-1K",
+     "qty": 6
+    },
+    {
+     "code": "KUM-1L",
+     "qty": 5
+    },
+    {
+     "code": "MAN-SAL-250",
+     "qty": 2
+    },
+    {
+     "code": "ARE-5K",
+     "qty": 10
+    }
+   ]
+  },
+  {
+   "clientId": "C10",
+   "invoice": "FE-5210",
+   "point": "Polar Gelato Usaquén",
+   "issueOffset": -13,
+   "dueOffset": 17,
+   "original": 480700,
+   "balance": 480700,
+   "lines": [
+    {
+     "code": "QSO-CRE-1K",
+     "qty": 4
+    },
+    {
+     "code": "QSO-DCR-2K5",
+     "qty": 3
+    },
+    {
+     "code": "LEC-ENT-1L",
+     "qty": 24
+    },
+    {
+     "code": "QSO-MOZ-TAJ-1K",
+     "qty": 4
+    }
+   ]
+  },
+  {
+   "clientId": "C10",
+   "invoice": "FE-5213",
+   "point": "Polar Gelato Andino",
+   "issueOffset": -79,
+   "dueOffset": -49,
+   "original": 795700,
+   "balance": 557000,
+   "lines": [
+    {
+     "code": "YOG-GRI-NAT-150",
+     "qty": 5
+    },
+    {
+     "code": "QSO-PAR-RAL-1K",
+     "qty": 10
+    },
+    {
+     "code": "YOG-NAT-SA-1K",
+     "qty": 24
+    }
+   ]
+  },
+  {
+   "clientId": "C10",
+   "invoice": "FE-5215",
+   "point": "Polar Gelato Usaquén",
+   "issueOffset": -19,
+   "dueOffset": 11,
+   "original": 1239800,
+   "balance": 1239800,
+   "lines": [
+    {
+     "code": "QSO-MOZ-TAJ-1K",
      "qty": 24
     },
     {
@@ -1413,11 +1671,195 @@
      "qty": 5
     },
     {
+     "code": "QSO-MOZ-BLQ-2K5",
+     "qty": 4
+    },
+    {
+     "code": "MAN-SAL-250",
+     "qty": 24
+    }
+   ]
+  },
+  {
+   "clientId": "C10",
+   "invoice": "FE-5218",
+   "point": "Polar Gelato Usaquén",
+   "issueOffset": -18,
+   "dueOffset": 12,
+   "original": 750600,
+   "balance": 750600,
+   "lines": [
+    {
+     "code": "LPO-ENT-25K",
+     "qty": 1
+    },
+    {
+     "code": "LEC-ENT-1L",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "clientId": "C10",
+   "invoice": "FE-5220",
+   "point": "Polar Gelato Andino",
+   "issueOffset": -19,
+   "dueOffset": 11,
+   "original": 257400,
+   "balance": 257400,
+   "lines": [
+    {
+     "code": "MAN-SAL-250",
+     "qty": 12
+    },
+    {
+     "code": "LEC-DES-1L",
+     "qty": 4
+    },
+    {
      "code": "QSO-MOZ-TAJ-1K",
+     "qty": 4
+    },
+    {
+     "code": "YOG-BEB-MOR-1L",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "clientId": "C11",
+   "invoice": "FE-5224",
+   "point": "Donde Mamá Inés",
+   "issueOffset": -27,
+   "dueOffset": -12,
+   "original": 243400,
+   "balance": 243400,
+   "lines": [
+    {
+     "code": "YOG-NAT-SA-1K",
+     "qty": 5
+    },
+    {
+     "code": "LPO-ENT-400",
+     "qty": 8
+    },
+    {
+     "code": "CUA-500",
+     "qty": 4
+    }
+   ]
+  },
+  {
+   "clientId": "C11",
+   "invoice": "FE-5226",
+   "point": "Donde Mamá Inés",
+   "issueOffset": -60,
+   "dueOffset": -45,
+   "original": 456300,
+   "balance": 456300,
+   "lines": [
+    {
+     "code": "LPO-DES-400",
+     "qty": 12
+    },
+    {
+     "code": "YOG-BEB-FRE-200",
      "qty": 24
     },
     {
-     "code": "YOG-GRI-NAT-1K",
+     "code": "QSO-CAM-500",
+     "qty": 12
+    },
+    {
+     "code": "LEC-DES-1L",
+     "qty": 3
+    }
+   ]
+  },
+  {
+   "clientId": "C12",
+   "invoice": "FE-5229",
+   "point": "Seis Rooftop Bar",
+   "issueOffset": -47,
+   "dueOffset": -17,
+   "original": 156500,
+   "balance": 109500,
+   "lines": [
+    {
+     "code": "YOG-BEB-FRE-1L",
+     "qty": 10
+    },
+    {
+     "code": "YOG-BEB-MEL-1L",
+     "qty": 5
+    },
+    {
+     "code": "YOG-BEB-FRE-200",
+     "qty": 10
+    }
+   ]
+  },
+  {
+   "clientId": "C12",
+   "invoice": "FE-5231",
+   "point": "Seis Rooftop Bar",
+   "issueOffset": -96,
+   "dueOffset": -66,
+   "original": 1137000,
+   "balance": 795900,
+   "lines": [
+    {
+     "code": "QSO-MOZ-BLQ-2K5",
+     "qty": 12
+    },
+    {
+     "code": "YOG-GRI-NAT-150",
+     "qty": 6
+    },
+    {
+     "code": "QSO-CRE-1K",
+     "qty": 8
+    },
+    {
+     "code": "CUA-500",
+     "qty": 12
+    }
+   ]
+  },
+  {
+   "clientId": "C13",
+   "invoice": "FE-5235",
+   "point": "Nogal Catering",
+   "issueOffset": -7,
+   "dueOffset": 38,
+   "original": 323700,
+   "balance": 323700,
+   "lines": [
+    {
+     "code": "CUA-500",
+     "qty": 12
+    },
+    {
+     "code": "ARE-5K",
+     "qty": 3
+    }
+   ]
+  },
+  {
+   "clientId": "C13",
+   "invoice": "FE-5236",
+   "point": "Nogal Catering",
+   "issueOffset": -52,
+   "dueOffset": -7,
+   "original": 64600,
+   "balance": 64600,
+   "lines": [
+    {
+     "code": "YOG-BEB-MEL-1L",
+     "qty": 6
+    },
+    {
+     "code": "MAN-SAL-250",
      "qty": 2
     }
    ]
@@ -1432,99 +1874,166 @@
    "balance": -150000,
    "lines": [],
    "advance": true
+  },
+  {
+   "clientId": "C02",
+   "invoice": "FE-5300",
+   "point": "La Terraza 93",
+   "issueOffset": -45,
+   "dueOffset": 0,
+   "original": 486000,
+   "balance": 486000,
+   "lines": [
+    {
+     "code": "QSO-MOZ-BLQ-2K5",
+     "qty": 4
+    },
+    {
+     "code": "CRE-LEC-1L",
+     "qty": 12
+    }
+   ]
   }
  ],
  "payables": [
   {
+   "supplierId": "P01",
+   "invoice": "HLS-5379",
+   "issueOffset": -1,
+   "dueOffset": 14,
+   "original": 16820200,
+   "balance": 16820200
+  },
+  {
+   "supplierId": "P01",
+   "invoice": "HLS-1430",
+   "issueOffset": -16,
+   "dueOffset": -1,
+   "original": 21954500,
+   "balance": 21954500
+  },
+  {
+   "supplierId": "P01",
+   "invoice": "HLS-9689",
+   "issueOffset": -31,
+   "dueOffset": -16,
+   "original": 11495400,
+   "balance": 5747700
+  },
+  {
    "supplierId": "P02",
-   "invoice": "ASO-6591",
-   "issueOffset": -66,
-   "dueOffset": -51,
-   "original": 1518700,
-   "balance": 1518700
+   "invoice": "ADG-2244",
+   "issueOffset": -1,
+   "dueOffset": 14,
+   "original": 12252000,
+   "balance": 12252000
+  },
+  {
+   "supplierId": "P02",
+   "invoice": "ADG-2819",
+   "issueOffset": -16,
+   "dueOffset": -1,
+   "original": 15859300,
+   "balance": 15859300
+  },
+  {
+   "supplierId": "P02",
+   "invoice": "ADG-1094",
+   "issueOffset": -31,
+   "dueOffset": -16,
+   "original": 15238700,
+   "balance": 15238700
   },
   {
    "supplierId": "P03",
-   "invoice": "COO-3182",
-   "issueOffset": -42,
-   "dueOffset": -27,
-   "original": 396400,
-   "balance": 198200
+   "invoice": "CLS-3768",
+   "issueOffset": -1,
+   "dueOffset": 14,
+   "original": 20276400,
+   "balance": 20276400
+  },
+  {
+   "supplierId": "P03",
+   "invoice": "CLS-2385",
+   "issueOffset": -16,
+   "dueOffset": -1,
+   "original": 22682500,
+   "balance": 22682500
+  },
+  {
+   "supplierId": "P03",
+   "invoice": "CLS-2895",
+   "issueOffset": -31,
+   "dueOffset": -16,
+   "original": 9545200,
+   "balance": 9545200
   },
   {
    "supplierId": "P04",
-   "invoice": "CUL-4256",
-   "issueOffset": -33,
-   "dueOffset": -3,
-   "original": 5167100,
-   "balance": 5167100
+   "invoice": "CYF-9445",
+   "issueOffset": -46,
+   "dueOffset": -16,
+   "original": 3168300,
+   "balance": 3168300
   },
   {
-   "supplierId": "P04",
-   "invoice": "CUL-1887",
-   "issueOffset": -66,
-   "dueOffset": -36,
-   "original": 1364800,
-   "balance": 1364800
+   "supplierId": "P05",
+   "invoice": "EPD-8888",
+   "issueOffset": -25,
+   "dueOffset": 20,
+   "original": 3345200,
+   "balance": 1672600
   },
   {
    "supplierId": "P06",
-   "invoice": "FRU-2486",
-   "issueOffset": -69,
-   "dueOffset": -39,
-   "original": 1087100,
-   "balance": 1087100
+   "invoice": "FPI-4352",
+   "issueOffset": -22,
+   "dueOffset": 8,
+   "original": 2782900,
+   "balance": 1391400
   },
   {
-   "supplierId": "P08",
-   "invoice": "ENE-9650",
-   "issueOffset": -23,
-   "dueOffset": 7,
-   "original": 4450800,
-   "balance": 4450800
-  },
-  {
-   "supplierId": "P08",
-   "invoice": "ENE-1473",
-   "issueOffset": -50,
-   "dueOffset": -20,
-   "original": 2402100,
-   "balance": 2402100
-  },
-  {
-   "supplierId": "P08",
-   "invoice": "ENE-9627",
-   "issueOffset": -27,
-   "dueOffset": 3,
-   "original": 1453500,
-   "balance": 726800
-  },
-  {
-   "supplierId": "P08",
-   "invoice": "ENE-9004",
-   "issueOffset": -28,
-   "dueOffset": 2,
-   "original": 5320300,
-   "balance": 2660200
+   "supplierId": "P07",
+   "invoice": "TLS-9954",
+   "issueOffset": -61,
+   "dueOffset": -31,
+   "original": 424000,
+   "balance": 424000
   },
   {
    "supplierId": "P09",
-   "invoice": "ETI-9832",
-   "issueOffset": -47,
-   "dueOffset": -17,
-   "original": 1464200,
-   "balance": 1464200
+   "invoice": "ERL-2464",
+   "issueOffset": -2,
+   "dueOffset": 28,
+   "original": 1400300,
+   "balance": 1400300
+  },
+  {
+   "supplierId": "P10",
+   "invoice": "QLD-9271",
+   "issueOffset": -22,
+   "dueOffset": 8,
+   "original": 631000,
+   "balance": 631000
+  },
+  {
+   "supplierId": "P10",
+   "invoice": "QLD-3767",
+   "issueOffset": -31,
+   "dueOffset": -1,
+   "original": 1353800,
+   "balance": 1353800
+  },
+  {
+   "supplierId": "P05",
+   "invoice": "EPS-4410",
+   "issueOffset": -45,
+   "dueOffset": 0,
+   "original": 2380000,
+   "balance": 2380000
   },
   {
    "supplierId": "P09",
-   "invoice": "ETI-2000",
-   "issueOffset": -20,
-   "dueOffset": 10,
-   "original": 2858200,
-   "balance": 2858200
-  },
-  {
-   "supplierId": "P08",
    "invoice": "ANT-0031",
    "issueOffset": -12,
    "dueOffset": -12,

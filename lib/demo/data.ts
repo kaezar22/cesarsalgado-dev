@@ -84,7 +84,8 @@ export function fmtDate(d: Date, lang: Lang) {
 }
 
 export function fmtCOP(n: number) {
-  return "$" + Math.round(n).toLocaleString("es-CO");
+  const v = Math.round(n);
+  return (v < 0 ? "-$" : "$") + Math.abs(v).toLocaleString("es-CO");
 }
 
 export function fmtQty(n: number) {

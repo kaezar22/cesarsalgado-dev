@@ -43,7 +43,8 @@ const TX = {
     tab2: "2 · Back office",
     tab2b: "Match, price & invoice",
     nameLabel: "Your restaurant",
-    nameHint: "Type it however you like, typos included. Try “cafe mirador usaquen”, “forno vivo chia” or a name that isn’t a client.",
+    nameHint: "Pick one of the clients below or type it yourself. Typos and missing words are fine: try “forno chico” or “mirador”, or a name that isn’t a client.",
+    clientsTitle: (n: number, c: number) => `Our clients: ${n} points of sale from ${c} companies`,
     namePh: "e.g. forno chico",
     delivery: "Delivery date",
     products: "Products",
@@ -83,7 +84,8 @@ const TX = {
     tab2: "2 · Back office",
     tab2b: "Cruce, precios y factura",
     nameLabel: "Su restaurante",
-    nameHint: "Escríbalo como quiera, con errores incluidos. Pruebe “cafe mirador usaquen”, “forno vivo chia” o un nombre que no sea cliente.",
+    nameHint: "Elija uno de los clientes de abajo o escríbalo usted. Se valen errores y palabras de menos: pruebe “forno chico” o “mirador”, o un nombre que no sea cliente.",
+    clientsTitle: (n: number, c: number) => `Nuestros clientes: ${n} puntos de venta de ${c} empresas`,
     namePh: "ej. forno chico",
     delivery: "Fecha de entrega",
     products: "Productos",
@@ -120,6 +122,10 @@ const TX = {
 };
 
 type Row = { order: Order; match: Match; confirmed: boolean };
+
+const POINTS = DATA.clients
+  .flatMap((c) => c.points.map((point) => ({ point, legal: c.legalName })))
+  .sort((a, b) => a.point.localeCompare(b.point, "es"));
 
 export default function OrdersDemo({ lang }: { lang: Lang }) {
   const t = TX[lang];
@@ -260,6 +266,26 @@ export default function OrdersDemo({ lang }: { lang: Lang }) {
                 ))}
               </select>
             </label>
+          </div>
+
+          <div className="dm-clients">
+            <div className="dm-cat-title">{t.clientsTitle(POINTS.length, DATA.clients.length)}</div>
+            <div className="dm-chips">
+              {POINTS.map(({ point, legal }) => (
+                <button
+                  key={point}
+                  type="button"
+                  title={legal}
+                  className={`dm-chip ${name === point ? "on" : ""}`}
+                  onClick={() => {
+                    setName(point);
+                    setError(null);
+                  }}
+                >
+                  {point}
+                </button>
+              ))}
+            </div>
           </div>
 
           <h3 className="dm-h3">{t.products}</h3>

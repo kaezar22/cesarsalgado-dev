@@ -7,6 +7,7 @@ import {
   EMAIL,
   FUN,
   GITHUB,
+  INTEGRATIONS,
   LINKEDIN,
   MUSIC,
   PROJECTS,
@@ -138,6 +139,17 @@ export default function Site({ lang }: { lang: Lang }) {
                 </ul>
               </div>
             ))}
+          </div>
+          <div className="cs-integrations">
+            <div className="cs-int-title">{t.integrations_title}</div>
+            <div className="cs-int-list">
+              {INTEGRATIONS.map((i) => (
+                <span key={i.name} className={i.star ? "star" : ""}>
+                  {i.name}
+                </span>
+              ))}
+            </div>
+            <p>{t.integrations_note}</p>
           </div>
         </section>
 

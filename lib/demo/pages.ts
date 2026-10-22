@@ -15,7 +15,7 @@ export const DEMOS = {
         title: "How it works in production",
         items: [
           "A version of this runs every day at a food distributor in Bogotá, replacing hours of copying orders into the ERP by hand.",
-          "Orders land in Google Sheets; client names, price lists and credit terms come live from the accounting system.",
+          "Orders land in Google Sheets; client names, price lists and credit terms come live from World Office, the company’s ERP.",
           "Fuzzy matching resolves trading names to legal entities. Below the confidence threshold the system asks a human instead of guessing.",
           "Invoices are generated as PDFs and saved to Drive, grouped by client and delivery date.",
         ],
@@ -31,7 +31,7 @@ export const DEMOS = {
         title: "Cómo funciona en producción",
         items: [
           "Una versión de esto funciona a diario en una distribuidora de alimentos en Bogotá y reemplazó horas de pasar pedidos a mano al ERP.",
-          "Los pedidos llegan a Google Sheets; los clientes, listas de precios y plazos de crédito salen en vivo del sistema contable.",
+          "Los pedidos llegan a Google Sheets; los clientes, listas de precios y plazos de crédito salen en vivo de World Office, el ERP de la empresa.",
           "El cruce difuso resuelve nombres comerciales a razones sociales. Por debajo del umbral de confianza, el sistema pregunta a una persona en vez de adivinar.",
           "Las facturas se generan en PDF y se guardan en Drive, agrupadas por cliente y fecha de entrega.",
         ],
@@ -42,7 +42,7 @@ export const DEMOS = {
     slug: "finance",
     art: ["NIT 900922426-5 · PIN ••••••", "FE-5231 · overdue 66 days", "Suppliers: 6 overdue ⚠"],
     en: {
-      tag: "Finance · Self-service portal",
+      tag: "Finance · World Office integration",
       title: "Client statements and supplier payables",
       card: "Clients sign in with their NIT and a PIN to see what they owe, invoice by invoice. The finance team sees what the company owes each supplier, what is overdue and what is coming.",
       lead:
@@ -50,15 +50,15 @@ export const DEMOS = {
       how: {
         title: "How it works in production",
         items: [
-          "A version of this runs at a food distributor in Bogotá, reading live from its cloud accounting system (read-only: the app never changes anything).",
-          "Balances match the accounting system to the peso: payments, advances and credit notes are already applied, and each invoice keeps its own due date.",
+          "A version of this runs at a food distributor in Bogotá, reading live from World Office Cloud through its API (read-only: the app never changes anything in the ERP).",
+          "Balances match World Office’s own reports to the peso: payments, advances and credit notes are already applied, and each invoice keeps its own due date.",
           "Clients get a PIN from the finance team; wrong PINs lock the NIT for a while and the error message never reveals who is a client.",
           "The payables view queries every supplier in parallel and exports everything to Excel with one click.",
         ],
       },
     },
     es: {
-      tag: "Finanzas · Portal de autoservicio",
+      tag: "Finanzas · Integración con World Office",
       title: "Estados de cuenta y cuentas por pagar",
       card: "Los clientes entran con su NIT y un PIN y ven lo que deben, factura por factura. El equipo financiero ve lo que la empresa le debe a cada proveedor, qué está vencido y qué viene.",
       lead:
@@ -66,8 +66,8 @@ export const DEMOS = {
       how: {
         title: "Cómo funciona en producción",
         items: [
-          "Una versión de esto funciona en una distribuidora de alimentos en Bogotá y lee en vivo de su sistema contable en la nube (solo lectura: la app nunca modifica nada).",
-          "Los saldos cuadran al peso con la contabilidad: pagos, anticipos y notas crédito ya están aplicados, y cada factura conserva su propio vencimiento.",
+          "Una versión de esto funciona en una distribuidora de alimentos en Bogotá y lee en vivo de World Office Cloud a través de su API (solo lectura: la app nunca modifica nada en el ERP).",
+          "Los saldos cuadran al peso con los informes de World Office: pagos, anticipos y notas crédito ya están aplicados, y cada factura conserva su propio vencimiento.",
           "El equipo financiero le asigna el PIN a cada cliente; los PIN errados bloquean el NIT por un tiempo y el mensaje de error nunca revela quién es cliente.",
           "La vista de cuentas por pagar consulta todos los proveedores en paralelo y exporta todo a Excel con un clic.",
         ],
@@ -123,7 +123,7 @@ export const DEMOS = {
         title: "How it works in production",
         items: [
           "It started as a template parser for a food distributor’s supplier invoices; a language model replaces one template per supplier with a single reader for any layout.",
-          "The model only extracts. Every number is re-checked with arithmetic, and suppliers and invoice numbers are matched against the accounting system before anything is posted.",
+          "The model only extracts. Every number is re-checked with arithmetic, and suppliers and invoice numbers are matched against the ERP (World Office) before anything is posted.",
           "Invoices that pass every check go straight to accounts payable; the rest land in a review queue with the reason highlighted.",
           "Scanned invoices add an OCR step before the model. Nothing in this demo is stored: the file is read once and discarded.",
         ],
@@ -139,7 +139,7 @@ export const DEMOS = {
         title: "Cómo funciona en producción",
         items: [
           "Empezó como un lector por plantillas para las facturas de proveedores de una distribuidora de alimentos; el modelo de lenguaje reemplaza una plantilla por proveedor con un solo lector para cualquier formato.",
-          "El modelo solo extrae. Cada número se vuelve a verificar con aritmética, y el proveedor y el número de factura se cruzan con el sistema contable antes de registrar nada.",
+          "El modelo solo extrae. Cada número se vuelve a verificar con aritmética, y el proveedor y el número de factura se cruzan con el ERP (World Office) antes de registrar nada.",
           "Las facturas que pasan todas las validaciones van directo a cuentas por pagar; las demás quedan en una cola de revisión con el motivo resaltado.",
           "Para facturas escaneadas se agrega un paso de OCR antes del modelo. En esta demo no se guarda nada: el archivo se lee una vez y se descarta.",
         ],

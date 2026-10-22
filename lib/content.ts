@@ -21,7 +21,7 @@ export const T = {
   en: {
     meta_title: "César Salgado | AI, Data Science & RPA Consultant",
     meta_description:
-      "I build AI tools, data pipelines and RPA automations that turn manual processes into automated ones and data into decisions.",
+      "I build AI tools, data pipelines, RPA automations and World Office ERP integrations that turn manual processes into automated ones and data into decisions.",
     nav_services: "Services",
     nav_projects: "Projects",
     nav_demos: "Live demos",
@@ -43,12 +43,15 @@ export const T = {
     ],
     services_kicker: "Consulting",
     services_title: "What I can do for your company",
+    integrations_title: "Systems I connect",
+    integrations_note: "World Office is a widely used ERP among Colombian SMEs. I read clients, price lists, receivables, payables and documents from its API so the data never has to be retyped.",
     services: [
       {
         title: "RPA & process automation",
         text: "Repetitive work in spreadsheets, reports and web portals, handed over to software.",
         items: [
           "Automation of manual processes with Python",
+          "World Office ERP integrations (API)",
           "Scheduled workflows and alerts",
           "API integrations and web scraping",
           "Automated reporting",
@@ -118,7 +121,7 @@ export const T = {
   es: {
     meta_title: "César Salgado | Consultor en IA, ciencia de datos y RPA",
     meta_description:
-      "Construyo herramientas de IA, pipelines de datos y automatizaciones RPA que convierten procesos manuales en automáticos y datos en decisiones.",
+      "Construyo herramientas de IA, pipelines de datos, automatizaciones RPA e integraciones con World Office que convierten procesos manuales en automáticos y datos en decisiones.",
     nav_services: "Servicios",
     nav_projects: "Proyectos",
     nav_demos: "Demos",
@@ -140,12 +143,15 @@ export const T = {
     ],
     services_kicker: "Consultoría",
     services_title: "Lo que puedo hacer por su empresa",
+    integrations_title: "Sistemas que conecto",
+    integrations_note: "World Office es un ERP muy usado por las pymes en Colombia. Leo de su API clientes, listas de precios, cartera, cuentas por pagar y documentos, para que nadie tenga que volver a digitar los datos.",
     services: [
       {
         title: "RPA y automatización de procesos",
         text: "El trabajo repetitivo en hojas de cálculo, reportes y portales web, en manos del software.",
         items: [
           "Automatización de procesos manuales con Python",
+          "Integraciones con World Office (API)",
           "Flujos programados y alertas",
           "Integraciones por API y web scraping",
           "Reportes automatizados",
@@ -387,6 +393,17 @@ export const FUN = [
     es: ["Diseño de portafolio de esmeraldas", "Video · Vimeo"],
   },
 ] as const;
+
+export const INTEGRATIONS = [
+  { name: "World Office", star: true },
+  { name: "Google Sheets & Drive" },
+  { name: "Power BI" },
+  { name: "Shopify" },
+  { name: "WhatsApp Business" },
+  { name: "OpenAI · DeepSeek" },
+  { name: "Azure · Databricks" },
+  { name: "PostgreSQL" },
+];
 
 export const TESTIMONIALS = [
   {

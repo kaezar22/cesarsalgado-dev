@@ -516,3 +516,11 @@ a.cs-music:hover .cs-play { transform: translate(-50%, -50%) scale(1.1); }
   .ir-right { padding: 1rem 0.8rem; }
   .ir-lines { font-size: 0.82rem; }
 }
+
+/* Integrations strip */
+.cs-integrations { margin-top: 1.4rem; padding: 1.3rem 1.5rem; background: var(--card); border: 1px solid var(--line); border-radius: 14px; }
+.cs-int-title { font-size: 0.74rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.7rem; }
+.cs-int-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.cs-int-list span { font-size: 0.92rem; font-weight: 500; padding: 0.4rem 0.85rem; border-radius: 999px; background: var(--paper); border: 1px solid var(--line); }
+.cs-int-list span.star { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.cs-integrations p { margin: 0.9rem 0 0; color: var(--muted); font-size: 0.93rem; line-height: 1.55; max-width: 820px; }

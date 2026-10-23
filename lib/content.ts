@@ -12,6 +12,22 @@ export const EMAIL = "hello@cesarsalgado.dev";
 export const LINKEDIN = "https://www.linkedin.com/in/cesar-salgado-274a2329/";
 export const GITHUB = "https://github.com/kaezar22";
 
+/**
+ * Booking link for the free diagnostic (Cal.com or Calendly), e.g. "https://cal.com/cesarsalgado/diagnostico".
+ * While it is empty, the "Book" buttons open an email with the subject already filled in.
+ */
+export const BOOKING_URL = "";
+
+export function bookingHref(lang: Lang) {
+  if (BOOKING_URL) return BOOKING_URL;
+  const subject = lang === "es" ? "Diagnóstico de automatización (45 min)" : "Automation diagnostic (45 min)";
+  const body =
+    lang === "es"
+      ? "Hola César,\n\nMe interesa el diagnóstico de 45 minutos.\n\nEmpresa:\nProceso que hacemos a mano:\nSistema que usamos (World Office, Siigo, Excel...):\nHorarios que me sirven:\n"
+      : "Hi César,\n\nI'd like the 45-minute diagnostic.\n\nCompany:\nProcess we do by hand:\nSystems we use (ERP, Excel...):\nTimes that work for me:\n";
+  return `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
 export const CV_FILES: Record<Lang, string> = {
   en: "/cv/CV_Cesar_Salgado_EN.pdf",
   es: "/cv/CV_Cesar_Salgado_ES.pdf",
@@ -25,6 +41,7 @@ export const T = {
     nav_services: "Services",
     nav_projects: "Projects",
     nav_demos: "Live demos",
+    nav_offer: "Free diagnostic",
     nav_chat: "Ask my AI",
     nav_contact: "Contact",
     other_lang: "Español",
@@ -32,7 +49,8 @@ export const T = {
     h1: "I turn manual processes into automated ones, and data into decisions.",
     lead:
       "I'm César Salgado, an industrial engineer and consultant with more than seven years in finance, the public sector, e-commerce and international trade. I design and build automation, analytics and AI systems, and I work in Spanish, English and Mandarin.",
-    cta_mail: "Start a conversation",
+    cta_book: "Book a free 45-min diagnostic",
+    cta_mail: "Email me",
     cta_linkedin: "LinkedIn",
     cv: "Download CV",
     stats: [
@@ -43,12 +61,15 @@ export const T = {
     ],
     services_kicker: "Consulting",
     services_title: "What I can do for your company",
+    services_for:
+      "For small and mid-sized companies that invoice with World Office, Siigo or Excel and lose hours every week copying data between systems.",
     integrations_title: "Systems I connect",
     integrations_note: "World Office is a widely used ERP among Colombian SMEs. I read clients, price lists, receivables, payables and documents from its API so the data never has to be retyped.",
     services: [
       {
         title: "RPA & process automation",
-        text: "Repetitive work in spreadsheets, reports and web portals, handed over to software.",
+        for: "Your admin team stops retyping orders, invoices and reports.",
+        text: "Repetitive work in spreadsheets, your ERP and web portals runs by itself, with a person only where judgment is needed.",
         items: [
           "Automation of manual processes with Python",
           "World Office ERP integrations (API)",
@@ -59,7 +80,8 @@ export const T = {
       },
       {
         title: "Data analytics",
-        text: "One reliable view of the business, built from data that is scattered today.",
+        for: "You know how the business is doing today, not at month-end.",
+        text: "One reliable dashboard of sales, receivables and margins, fed automatically from data that is scattered today.",
         items: [
           "SQL models and data pipelines",
           "Power BI and Streamlit dashboards",
@@ -69,7 +91,8 @@ export const T = {
       },
       {
         title: "AI architecture",
-        text: "Language models applied where they pay for themselves, from pilot to daily use.",
+        for: "Documents and repeated questions stop eating your team’s day.",
+        text: "Invoices and PDFs read automatically and checked, and assistants that answer from your own files, applied only where they pay for themselves.",
         items: [
           "LLM data enrichment at scale",
           "Chatbots that answer from your own documents (RAG)",
@@ -78,10 +101,21 @@ export const T = {
         ],
       },
     ],
+    offer_kicker: "Next step",
+    offer_title: "Free 45-minute automation diagnostic",
+    offer_lead: "A video call about one process your team does by hand today. No slides and no sales pitch.",
+    offer_items: [
+      "We map the process together: who does what, in which system, how many hours a week.",
+      "I tell you what can be automated, what can’t, and roughly what it would cost.",
+      "Within 48 hours you get a one-page plan, whether you hire me or not.",
+    ],
+    offer_cta: "Book your diagnostic",
+    offer_alt: "Prefer email? Write to",
+    offer_note: "If automating your case doesn’t pay off, I’ll tell you.",
     testimonials_kicker: "Client results",
     testimonials_title: "What clients say about working with me",
-    projects_kicker: "Selected work",
-    projects_title: "Projects you can open and try",
+    projects_kicker: "More work",
+    projects_title: "Other projects and experiments",
     projects_note:
       "Some live demos run on a free tier, so a demo may take up to a minute to wake up.",
     demos_kicker: "Live demos",
@@ -125,6 +159,7 @@ export const T = {
     nav_services: "Servicios",
     nav_projects: "Proyectos",
     nav_demos: "Demos",
+    nav_offer: "Diagnóstico gratis",
     nav_chat: "Pregúntale a mi IA",
     nav_contact: "Contacto",
     other_lang: "English",
@@ -132,7 +167,8 @@ export const T = {
     h1: "Convierto procesos manuales en procesos automatizados, y datos en decisiones.",
     lead:
       "Soy César Salgado, ingeniero industrial y consultor con más de siete años en finanzas, sector público, comercio electrónico y comercio internacional. Diseño y construyo sistemas de automatización, analítica e IA, y trabajo en español, inglés y mandarín.",
-    cta_mail: "Conversemos",
+    cta_book: "Agendar diagnóstico gratis (45 min)",
+    cta_mail: "Escríbame",
     cta_linkedin: "LinkedIn",
     cv: "Descargar CV",
     stats: [
@@ -143,12 +179,15 @@ export const T = {
     ],
     services_kicker: "Consultoría",
     services_title: "Lo que puedo hacer por su empresa",
+    services_for:
+      "Para pymes que facturan con World Office, Siigo o Excel y pierden horas cada semana copiando datos de un sistema a otro.",
     integrations_title: "Sistemas que conecto",
     integrations_note: "World Office es un ERP muy usado por las pymes en Colombia. Leo de su API clientes, listas de precios, cartera, cuentas por pagar y documentos, para que nadie tenga que volver a digitar los datos.",
     services: [
       {
         title: "RPA y automatización de procesos",
-        text: "El trabajo repetitivo en hojas de cálculo, reportes y portales web, en manos del software.",
+        for: "Su equipo administrativo deja de digitar pedidos, facturas y reportes.",
+        text: "El trabajo repetitivo en hojas de cálculo, en su ERP y en portales web se hace solo, con una persona solo donde hace falta criterio.",
         items: [
           "Automatización de procesos manuales con Python",
           "Integraciones con World Office (API)",
@@ -159,7 +198,8 @@ export const T = {
       },
       {
         title: "Analítica de datos",
-        text: "Una vista confiable del negocio, construida con datos que hoy están dispersos.",
+        for: "Sabe cómo va el negocio hoy, no a fin de mes.",
+        text: "Un tablero confiable de ventas, cartera y márgenes, alimentado solo con datos que hoy están dispersos.",
         items: [
           "Modelos SQL y pipelines de datos",
           "Tableros en Power BI y Streamlit",
@@ -169,7 +209,8 @@ export const T = {
       },
       {
         title: "Arquitectura de IA",
-        text: "Modelos de lenguaje aplicados donde se pagan solos, del piloto al uso diario.",
+        for: "Los documentos y las preguntas repetidas dejan de comerse el día de su equipo.",
+        text: "Facturas y PDFs leídos y verificados automáticamente, y asistentes que responden con sus propios archivos, aplicados solo donde se pagan solos.",
         items: [
           "Enriquecimiento de datos con LLM a gran escala",
           "Chatbots que responden con sus propios documentos (RAG)",
@@ -178,10 +219,21 @@ export const T = {
         ],
       },
     ],
+    offer_kicker: "Siguiente paso",
+    offer_title: "Diagnóstico de automatización de 45 minutos, sin costo",
+    offer_lead: "Una videollamada sobre un proceso que su equipo hace hoy a mano. Sin presentaciones ni discurso de venta.",
+    offer_items: [
+      "Mapeamos el proceso juntos: quién hace qué, en qué sistema y cuántas horas a la semana.",
+      "Le digo qué se puede automatizar, qué no, y cuánto costaría aproximadamente.",
+      "En 48 horas recibe un plan de una página, me contrate o no.",
+    ],
+    offer_cta: "Agendar mi diagnóstico",
+    offer_alt: "¿Prefiere correo? Escriba a",
+    offer_note: "Si automatizar su caso no se paga solo, se lo digo.",
     testimonials_kicker: "Resultados con clientes",
     testimonials_title: "Lo que dicen mis clientes de trabajar conmigo",
-    projects_kicker: "Trabajo seleccionado",
-    projects_title: "Proyectos que puede abrir y probar",
+    projects_kicker: "Más trabajo",
+    projects_title: "Otros proyectos y experimentos",
     projects_note:
       "Algunas demos están en un plan gratuito, así que pueden tardar hasta un minuto en despertar.",
     demos_kicker: "Demos en vivo",
@@ -258,26 +310,6 @@ export const PROJECTS: Project[] = [
         "Los precios mayoristas de las hortalizas cambian con fuerza de un mes a otro, y los compradores planean compras y ofertas sin saber hacia dónde van.",
       solution:
         "Pronostica el precio por kilo del próximo mes en Corabastos con datos oficiales de SIPSA-DANE, con un rango probable y una señal clara por producto: baja probable, alza probable o sin señal clara.",
-    },
-  },
-  {
-    image: "tradex.jpg",
-    url: "https://tradexgit-kmwf9rlefbrvroiq7ukzrn.streamlit.app/",
-    en: {
-      tag: "Finance · AI",
-      title: "Tradex: market analyzer",
-      problem:
-        "Reviewing dozens of instruments by hand, across charts, indicators and news, takes hours before any decision is made.",
-      solution:
-        "Screens up to 30 Yahoo Finance tickers, charts technical indicators, forecasts prices with ARIMA and scores news sentiment with a language model.",
-    },
-    es: {
-      tag: "Finanzas · IA",
-      title: "Tradex: analizador de mercados",
-      problem:
-        "Revisar a mano decenas de instrumentos, entre gráficos, indicadores y noticias, toma horas antes de decidir cualquier cosa.",
-      solution:
-        "Evalúa hasta 30 tickers de Yahoo Finance, grafica indicadores técnicos, pronostica precios con ARIMA y califica el sentimiento de las noticias con un modelo de lenguaje.",
     },
   },
   {

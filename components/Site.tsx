@@ -3,6 +3,8 @@ import Link from "next/link";
 import Chat from "./Chat";
 import { DEMOS } from "@/lib/demo/pages";
 import {
+  BOOKING_URL,
+  bookingHref,
   CV_FILES,
   EMAIL,
   FUN,
@@ -85,10 +87,10 @@ export default function Site({ lang }: { lang: Lang }) {
         </Link>
         <nav className="cs-nav">
           <a href="#services">{t.nav_services}</a>
-          <a href="#projects">{t.nav_projects}</a>
           <a href="#demos">{t.nav_demos}</a>
+          <a href="#diagnostic">{t.nav_offer}</a>
+          <a href="#projects">{t.nav_projects}</a>
           <a href="#chat">{t.nav_chat}</a>
-          <a href="#contact">{t.nav_contact}</a>
           <Link href={other === "en" ? "/" : "/es"} className="cs-lang" hrefLang={other}>
             {t.other_lang}
           </Link>
@@ -102,7 +104,10 @@ export default function Site({ lang }: { lang: Lang }) {
           <p className="cs-tagline">{t.h1}</p>
           <p className="cs-lead">{t.lead}</p>
           <div className="cs-actions">
-            <a className="cs-btn cs-btn-primary" href={`mailto:${EMAIL}`}>
+            <a className="cs-btn cs-btn-primary" href={bookingHref(lang)} {...(BOOKING_URL ? { target: "_blank", rel: "noopener" } : {})}>
+              {t.cta_book} →
+            </a>
+            <a className="cs-btn" href={`mailto:${EMAIL}`}>
               {t.cta_mail}
             </a>
             <a className="cs-btn" href={LINKEDIN} target="_blank" rel="noopener">
@@ -126,11 +131,13 @@ export default function Site({ lang }: { lang: Lang }) {
         <section className="cs-section" id="services">
           <div className="cs-kicker">{t.services_kicker}</div>
           <h2>{t.services_title}</h2>
+          <p className="cs-for">{t.services_for}</p>
           <div className="cs-services">
             {t.services.map((s, i) => (
               <div className="cs-service" key={s.title}>
                 <div className="n">0{i + 1}</div>
                 <h3>{s.title}</h3>
+                <p className="cs-outcome">{s.for}</p>
                 <p>{s.text}</p>
                 <ul>
                   {s.items.map((item) => (
@@ -150,42 +157,6 @@ export default function Site({ lang }: { lang: Lang }) {
               ))}
             </div>
             <p>{t.integrations_note}</p>
-          </div>
-        </section>
-
-        {TESTIMONIALS.length > 0 && (
-          <section className="cs-section" id="testimonials">
-            <div className="cs-kicker">{t.testimonials_kicker}</div>
-            <h2>{t.testimonials_title}</h2>
-            {TESTIMONIALS.map((item) => (
-              <figure className="cs-quote" key={item.client}>
-                <div className="cs-quote-main">
-                  <span className="cs-qmark" aria-hidden>
-                    “
-                  </span>
-                  <blockquote>{item[lang].quote}</blockquote>
-                  <figcaption>
-                    <Image src={item.logo} alt={item.client} width={120} height={38} />
-                    <span>{item[lang].role}</span>
-                  </figcaption>
-                </div>
-                <div className="cs-quote-stat">
-                  <b>{item[lang].stat}</b>
-                  <span>{item[lang].stat_label}</span>
-                </div>
-              </figure>
-            ))}
-          </section>
-        )}
-
-        <section className="cs-section" id="projects">
-          <div className="cs-kicker">{t.projects_kicker}</div>
-          <h2>{t.projects_title}</h2>
-          <p className="cs-note">{t.projects_note}</p>
-          <div className="cs-grid">
-            {PROJECTS.map((p) => (
-              <ProjectCard key={p.image} project={p} lang={lang} />
-            ))}
           </div>
         </section>
 
@@ -214,6 +185,64 @@ export default function Site({ lang }: { lang: Lang }) {
             ))}
           </div>
           {t.demos_soon && <p className="cs-note dm-soon">{t.demos_soon}</p>}
+        </section>
+
+        {TESTIMONIALS.length > 0 && (
+          <section className="cs-section" id="testimonials">
+            <div className="cs-kicker">{t.testimonials_kicker}</div>
+            <h2>{t.testimonials_title}</h2>
+            {TESTIMONIALS.map((item) => (
+              <figure className="cs-quote" key={item.client}>
+                <div className="cs-quote-main">
+                  <span className="cs-qmark" aria-hidden>
+                    “
+                  </span>
+                  <blockquote>{item[lang].quote}</blockquote>
+                  <figcaption>
+                    <Image src={item.logo} alt={item.client} width={120} height={38} />
+                    <span>{item[lang].role}</span>
+                  </figcaption>
+                </div>
+                <div className="cs-quote-stat">
+                  <b>{item[lang].stat}</b>
+                  <span>{item[lang].stat_label}</span>
+                </div>
+              </figure>
+            ))}
+          </section>
+        )}
+
+        <section className="cs-offer" id="diagnostic">
+          <div className="cs-offer-main">
+            <div className="cs-kicker">{t.offer_kicker}</div>
+            <h2>{t.offer_title}</h2>
+            <p className="cs-offer-lead">{t.offer_lead}</p>
+            <ol>
+              {t.offer_items.map((i) => (
+                <li key={i}>{i}</li>
+              ))}
+            </ol>
+          </div>
+          <div className="cs-offer-cta">
+            <a className="cs-btn cs-btn-primary cs-btn-big" href={bookingHref(lang)} {...(BOOKING_URL ? { target: "_blank", rel: "noopener" } : {})}>
+              {t.offer_cta} →
+            </a>
+            <p>
+              {t.offer_alt} <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+            </p>
+            <p className="cs-offer-note">{t.offer_note}</p>
+          </div>
+        </section>
+
+        <section className="cs-section" id="projects">
+          <div className="cs-kicker">{t.projects_kicker}</div>
+          <h2>{t.projects_title}</h2>
+          <p className="cs-note">{t.projects_note}</p>
+          <div className="cs-grid">
+            {PROJECTS.map((p) => (
+              <ProjectCard key={p.image} project={p} lang={lang} />
+            ))}
+          </div>
         </section>
 
         <section className="cs-section" id="chat">
@@ -271,6 +300,9 @@ export default function Site({ lang }: { lang: Lang }) {
         <section className="cs-contact" id="contact">
           <h2>{t.contact_title}</h2>
           <p>{t.contact_lead}</p>
+          <a className="cs-btn cs-btn-primary cs-contact-book" href={bookingHref(lang)} {...(BOOKING_URL ? { target: "_blank", rel: "noopener" } : {})}>
+            {t.cta_book} →
+          </a>
           <a className="cs-mail" href={`mailto:${EMAIL}`}>
             {EMAIL}
           </a>
